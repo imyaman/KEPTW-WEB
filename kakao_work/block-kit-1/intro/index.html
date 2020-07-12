@@ -1,0 +1,441 @@
+<!DOCTYPE html>
+<html lang="en" dir=>
+
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="시작하기 #  Block Kit 시작하기 #  Block Kit(블록 킷)은 카카오워크에서 단순하지만 강력한 인터랙션을 사용자가 경험할 수 있도록 제공하는 UI 프레임워크를 말합니다. 이 블록들을 1개부터 n개까지 쌓아올려 만든 말풍선을 조합형 말풍선이라고 정의하며, 다양한 블록들을 조합함으로써 좀 더 효과적으로 서비스별 Bot 특성에 맞춰 메시지를 커스터마이징 할 수 있습니다.
+블록 #  카카오워크 Block Kit 속성
+블록(Block)은 메시지를 구성하는 기본 단위이며, 모든 블록 타입은 1개 이상의 역할을 가지고 있습니다. 엘리먼트(Element)는 블록 타입에 따라 다른 블록과 조합될 수 있는 블록을 의미합니다.">
+<meta name="theme-color" content="#FFFFFF"><meta property="og:title" content="시작하기" />
+<meta property="og:description" content="시작하기 #  Block Kit 시작하기 #  Block Kit(블록 킷)은 카카오워크에서 단순하지만 강력한 인터랙션을 사용자가 경험할 수 있도록 제공하는 UI 프레임워크를 말합니다. 이 블록들을 1개부터 n개까지 쌓아올려 만든 말풍선을 조합형 말풍선이라고 정의하며, 다양한 블록들을 조합함으로써 좀 더 효과적으로 서비스별 Bot 특성에 맞춰 메시지를 커스터마이징 할 수 있습니다.
+블록 #  카카오워크 Block Kit 속성
+블록(Block)은 메시지를 구성하는 기본 단위이며, 모든 블록 타입은 1개 이상의 역할을 가지고 있습니다. 엘리먼트(Element)는 블록 타입에 따라 다른 블록과 조합될 수 있는 블록을 의미합니다." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="http://example.org/kakao_work/block-kit-1/intro/" />
+
+<title>시작하기 | My New Hugo Site</title>
+<link rel="manifest" href="/manifest.json">
+<link rel="icon" href="/favicon.png" type="image/x-icon">
+<link rel="stylesheet" href="/book.min.b3215d9d1d18d9051e7fbe8f256ff80e30f41d29073b86348e230d297b771002.css" integrity="sha256-syFdnR0Y2QUef76PJW/4DjD0HSkHO4Y0jiMNKXt3EAI=">
+<script defer src="/en.search.min.22c857bebeefe677db840ba9f640b4561525429dfd282403d49f82844f448c8d.js" integrity="sha256-IshXvr7v5nfbhAup9kC0VhUlQp39KCQD1J&#43;ChE9EjI0="></script>
+<!--
+Made with Book Theme
+https://github.com/alex-shpak/hugo-book
+-->
+
+  
+</head>
+
+<body dir=>
+  <input type="checkbox" class="hidden" id="menu-control" />
+  <main class="container flex">
+    <aside class="book-menu">
+      
+  <nav>
+<h2 class="book-brand">
+  <a href="/"><span>My New Hugo Site</span>
+  </a>
+</h2>
+
+
+<div class="book-search">
+  <input type="text" id="book-search-input" placeholder="Search" aria-label="Search" maxlength="64" data-hotkeys="s/" />
+  <div class="book-search-spinner hidden"></div>
+  <ul id="book-search-results"></ul>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+
+
+
+  
+  
+  
+  
+
+  
+  <ul>
+    
+      
+        <li>
+          
+  
+    <a href="/kakao_work/" class="collapsed ">Kakao Work</a>
+  
+
+          
+  
+  
+  
+
+  
+  <ul>
+    
+      
+        <li>
+          
+  
+    <a href="/kakao_work/messageblock/" class="">Message Block</a>
+  
+
+          
+  
+  
+  
+
+  
+  <ul>
+    
+  </ul>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+    <a href="/kakao_work/block-kit-1/" class="">Block Kit 구성 및 정책</a>
+  
+
+          
+  
+  
+  
+
+  
+  <ul>
+    
+      
+        <li>
+          
+  
+    <a href="/kakao_work/block-kit-1/intro/" class="active">시작하기</a>
+  
+
+        </li>
+      
+    
+  </ul>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+    <a href="/kakao_work/web-api-ref/" class="">Web API 레퍼런스</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+    <a href="/kakao_work/bot-stepbystep/" class="">Bot 시작 가이드</a>
+  
+
+        </li>
+      
+    
+  </ul>
+  
+
+        </li>
+      
+    
+  </ul>
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</nav>
+
+
+
+
+  <script>(function(){var menu=document.querySelector("aside.book-menu nav");addEventListener("beforeunload",function(event){localStorage.setItem("menu.scrollTop",menu.scrollTop);});menu.scrollTop=localStorage.getItem("menu.scrollTop");})();</script>
+
+
+ 
+    </aside>
+
+    <div class="book-page">
+      <header class="book-header">
+        
+  <div class="flex align-center justify-between">
+  <label for="menu-control">
+    <img src="/svg/menu.svg" class="book-icon" alt="Menu" />
+  </label>
+
+  <strong>시작하기</strong>
+
+  <label for="toc-control">
+    
+    <img src="/svg/toc.svg" class="book-icon" alt="Table of Contents" />
+    
+  </label>
+</div>
+
+
+  
+    <input type="checkbox" class="hidden" id="toc-control" />
+    <aside class="hidden clearfix">
+      
+  <nav id="TableOfContents">
+  <ul>
+    <li><a href="#block-kit-시작하기">Block Kit 시작하기</a></li>
+    <li><a href="#블록">블록</a>
+      <ul>
+        <li></li>
+      </ul>
+    </li>
+    <li><a href="#cognita-laeva-illo-fracta">Cognita laeva illo fracta</a></li>
+    <li><a href="#natus-quaerere">Natus quaerere</a></li>
+    <li><a href="#limitibus-misere-sit">Limitibus misere sit</a></li>
+    <li><a href="#enim-sua">Enim sua</a></li>
+    <li><a href="#germana-aves-pignus-tecta">Germana aves pignus tecta</a></li>
+  </ul>
+</nav>
+
+
+    </aside>
+  
+ 
+      </header>
+
+      
+      
+  <article class="markdown"><h1 id="시작하기">
+  시작하기
+  <a class="anchor" href="#%ec%8b%9c%ec%9e%91%ed%95%98%ea%b8%b0">#</a>
+</h1>
+<h2 id="block-kit-시작하기">
+  Block Kit 시작하기
+  <a class="anchor" href="#block-kit-%ec%8b%9c%ec%9e%91%ed%95%98%ea%b8%b0">#</a>
+</h2>
+<p>Block Kit(블록 킷)은 카카오워크에서 단순하지만 강력한 인터랙션을 사용자가 경험할 수 있도록 제공하는 UI 프레임워크를 말합니다. 이 블록들을 1개부터 n개까지 쌓아올려 만든 말풍선을 조합형 말풍선이라고 정의하며, 다양한 블록들을 조합함으로써 좀 더 효과적으로 서비스별 Bot 특성에 맞춰 메시지를 커스터마이징 할 수 있습니다.</p>
+<h2 id="블록">
+  블록
+  <a class="anchor" href="#%eb%b8%94%eb%a1%9d">#</a>
+</h2>
+<p>카카오워크 Block Kit 속성</p>
+<p><code>블록(Block)</code>은 메시지를 구성하는 기본 단위이며, 모든 블록 타입은 1개 이상의 역할을 가지고 있습니다. <code>엘리먼트(Element)</code>는 블록 타입에 따라 다른 블록과 조합될 수 있는 블록을 의미합니다. 이렇게 다양한 종류의 엘리먼트가 조합되어 레이아웃 블록(Layout Block)으로 구성됩니다. 즉, 다양한 엘리먼트들로 구성한 Block Kit을 레이아웃 블록이라고 말합니다. 예를 들어, 버튼 블록 2개를 조합하면 버튼 2개가 각각의 행으로 표시된 메시지가 됩니다. 이와 달리 2개의 버튼을 하나의 행 안에 나란히 배치하고 싶다면, 버튼 블록을 엘리먼트로 활용하는 레이아웃 블록인 <code>액션 블록(Action Block)</code>을 사용하면 됩니다. 각 블록에 대한 구체적인 설명 및 예시는 해당 블록을 설명하는 챕터에서 확인할 수 있습니다.</p>
+<h6 id="표-카카오워크의-block-kit">
+  표. 카카오워크의 Block Kit
+  <a class="anchor" href="#%ed%91%9c-%ec%b9%b4%ec%b9%b4%ec%98%a4%ec%9b%8c%ed%81%ac%ec%9d%98-block-kit">#</a>
+</h6>
+<table>
+<thead>
+<tr>
+<th align="center">블록타입</th>
+<th align="center">블록</th>
+<th align="center">엘리먼트</th>
+<th align="center">레이아웃 블록</th>
+<th align="center">조합가능 엘리먼트</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="center">Text Block</td>
+<td align="center">O</td>
+<td align="center">O</td>
+<td align="center">X</td>
+<td align="center"></td>
+</tr>
+<tr>
+<td align="center">Button Block</td>
+<td align="center">O</td>
+<td align="center">O</td>
+<td align="center">X</td>
+<td align="center"></td>
+</tr>
+<tr>
+<td align="center">Image Link Block</td>
+<td align="center">O</td>
+<td align="center">O</td>
+<td align="center">X</td>
+<td align="center"></td>
+</tr>
+<tr>
+<td align="center">Divider Block</td>
+<td align="center">O</td>
+<td align="center">X</td>
+<td align="center">X</td>
+<td align="center"></td>
+</tr>
+<tr>
+<td align="center">Action Block</td>
+<td align="center">X</td>
+<td align="center">X</td>
+<td align="center">X</td>
+<td align="center">Button Block</td>
+</tr>
+</tbody>
+</table>
+<hr>
+<p>문서 끝. 이하 샘플</p>
+<h2 id="cognita-laeva-illo-fracta">
+  Cognita laeva illo fracta
+  <a class="anchor" href="#cognita-laeva-illo-fracta">#</a>
+</h2>
+<p>Lorem markdownum pavent auras, surgit nunc cingentibus libet <strong>Laomedonque que</strong>
+est. Pastor <a href="http://est.org/ire.aspx">An</a> arbor filia foedat, ne <a href="http://www.indiciumturbam.org/moramquid.php">fugit
+aliter</a>, per. Helicona illas et
+callida neptem est <em>Oresitrophos</em> caput, dentibus est venit. Tenet reddite
+<a href="http://www.antro-et.net/">famuli</a> praesentem fortibus, quaeque vis foret si
+frondes <em>gelidos</em> gravidae circumtulit <a href="http://incurvasustulit.io/illi-virtute.html">inpulit armenta
+nativum</a>.</p>
+<ol>
+<li>Te at cruciabere vides rubentis manebo</li>
+<li>Maturuit in praetemptat ruborem ignara postquam habitasse</li>
+<li>Subitarum supplevit quoque fontesque venabula spretis modo</li>
+<li>Montis tot est mali quasque gravis</li>
+<li>Quinquennem domus arsit ipse</li>
+<li>Pellem turis pugnabant locavit</li>
+</ol>
+<h2 id="natus-quaerere">
+  Natus quaerere
+  <a class="anchor" href="#natus-quaerere">#</a>
+</h2>
+<p>Pectora et sine mulcere, coniuge dum tincta incurvae. Quis iam; est dextra
+Peneosque, metuis a verba, primo. Illa sed colloque suis: magno: gramen, aera
+excutiunt concipit.</p>
+<blockquote>
+<p>Phrygiae petendo suisque extimuit, super, pars quod audet! Turba negarem.
+Fuerat attonitus; et dextra retinet sidera ulnas undas instimulat vacuae
+generis? <em>Agnus</em> dabat et ignotis dextera, sic tibi pacis <strong>feriente at mora</strong>
+euhoeque <em>comites hostem</em> vestras Phineus. Vultuque sanguine dominoque <a href="http://iuvat.org/eundem.php">metuit
+risi</a> fama vergit summaque meus clarissimus
+artesque tinguebat successor nominis cervice caelicolae.</p>
+</blockquote>
+<h2 id="limitibus-misere-sit">
+  Limitibus misere sit
+  <a class="anchor" href="#limitibus-misere-sit">#</a>
+</h2>
+<p>Aurea non fata repertis praerupit feruntur simul, meae hosti lentaque <em>citius
+levibus</em>, cum sede dixit, Phaethon texta. <em>Albentibus summos</em> multifidasque
+iungitur loquendi an pectore, mihi ursaque omnia adfata, aeno parvumque in animi
+perlucentes. Epytus agis ait vixque clamat ornum adversam spondet, quid sceptra
+ipsum <strong>est</strong>. Reseret nec; saeva suo passu debentia linguam terga et aures et
+cervix <a href="http://www.amnem.io/pervenit.aspx">de</a> ubera. Coercet gelidumque manus,
+doluit volvitur induta?</p>
+<h2 id="enim-sua">
+  Enim sua
+  <a class="anchor" href="#enim-sua">#</a>
+</h2>
+<p>Iuvenilior filia inlustre templa quidem herbis permittat trahens huic. In
+cruribus proceres sole crescitque <em>fata</em>, quos quos; merui maris se non tamen
+in, mea.</p>
+<h2 id="germana-aves-pignus-tecta">
+  Germana aves pignus tecta
+  <a class="anchor" href="#germana-aves-pignus-tecta">#</a>
+</h2>
+<p>Mortalia rudibusque caelum cognosceret tantum aquis redito felicior texit, nec,
+aris parvo acre. Me parum contulerant multi tenentem, gratissime suis; vultum tu
+occupat deficeret corpora, sonum. E Actaea inplevit Phinea concepit nomenque
+potest sanguine captam nulla et, in duxisses campis non; mercede. Dicere cur
+Leucothoen obitum?</p>
+<p>Postibus mittam est <em>nubibus principium pluma</em>, exsecratur facta et. Iunge
+Mnemonidas pallamque pars; vere restitit alis flumina quae <strong>quoque</strong>, est
+ignara infestus Pyrrha. Di ducis terris maculatum At sede praemia manes
+nullaque!</p>
+</article>
+ 
+      
+
+      <footer class="book-footer">
+        
+  <div class="flex flex-wrap justify-between">
+
+
+
+
+
+</div>
+
+ 
+        
+      </footer>
+
+      
+  
+  <div class="book-comments">
+
+</div>
+  
+ 
+
+      <label for="menu-control" class="hidden book-menu-overlay"></label>
+    </div>
+
+    
+    <aside class="book-toc">
+      
+  <nav id="TableOfContents">
+  <ul>
+    <li><a href="#block-kit-시작하기">Block Kit 시작하기</a></li>
+    <li><a href="#블록">블록</a>
+      <ul>
+        <li></li>
+      </ul>
+    </li>
+    <li><a href="#cognita-laeva-illo-fracta">Cognita laeva illo fracta</a></li>
+    <li><a href="#natus-quaerere">Natus quaerere</a></li>
+    <li><a href="#limitibus-misere-sit">Limitibus misere sit</a></li>
+    <li><a href="#enim-sua">Enim sua</a></li>
+    <li><a href="#germana-aves-pignus-tecta">Germana aves pignus tecta</a></li>
+  </ul>
+</nav>
+
+ 
+    </aside>
+    
+  </main>
+
+  
+</body>
+
+</html>
+
+
+
+
+
+
+
+
+
+
+
+

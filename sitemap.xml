@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+  xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  
+  <url>
+    <loc>http://example.org/kakao_work/</loc>
+  </url>
+  
+  <url>
+    <loc>http://example.org/kakao_work/messageblock/</loc>
+  </url>
+  
+  <url>
+    <loc>http://example.org/kakao_work/block-kit-1/intro/</loc>
+  </url>
+  
+  <url>
+    <loc>http://example.org/kakao_work/block-kit-1/</loc>
+  </url>
+  
+  <url>
+    <loc>http://example.org/kakao_work/web-api-ref/</loc>
+  </url>
+  
+  <url>
+    <loc>http://example.org/kakao_work/bot-stepbystep/</loc>
+  </url>
+  
+  <url>
+    <loc>http://example.org/categories/</loc>
+  </url>
+  
+  <url>
+    <loc>http://example.org/</loc>
+  </url>
+  
+  <url>
+    <loc>http://example.org/tags/kakao_work/</loc>
+  </url>
+  
+  <url>
+    <loc>http://example.org/tags/</loc>
+  </url>
+  
+</urlset>
