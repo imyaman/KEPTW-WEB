@@ -20,7 +20,7 @@ Kakao i SDK for Wallpad는 기본적으로 사용자의 음성 명령을 입력�
 <link rel="manifest" href="/manifest.json">
 <link rel="icon" href="/favicon.png" type="image/x-icon">
 <link rel="stylesheet" href="/book.min.b3215d9d1d18d9051e7fbe8f256ff80e30f41d29073b86348e230d297b771002.css" integrity="sha256-syFdnR0Y2QUef76PJW/4DjD0HSkHO4Y0jiMNKXt3EAI=">
-<script defer src="/en.search.min.3f65d655bc21c98e5fb03abe7711a78e99e7dcf19922bbb5456bc9003d5b69bd.js" integrity="sha256-P2XWVbwhyY5fsDq&#43;dxGnjpnn3PGZIru1RWvJAD1bab0="></script>
+<script defer src="/en.search.min.bd53bf0b7c3a90fae1f2cd2ef70e81dd976a20c956ceea074b490a49418fa369.js" integrity="sha256-vVO/C3w6kPrh8s0u9w6B3ZdqIMlWzuoHS0kKSUGPo2k="></script>
 <!--
 Made with Book Theme
 https://github.com/alex-shpak/hugo-book
@@ -177,6 +177,34 @@ https://github.com/alex-shpak/hugo-book
       </ul>
     </li>
     <li><a href="#인터랙션-시나리오">인터랙션 시나리오</a></li>
+    <li><a href="#android-studio-설정">Android Studio 설정</a></li>
+    <li><a href="#프로젝트에서-sdk-사용">프로젝트에서 SDK 사용</a></li>
+    <li><a href="#gradle-설정">Gradle 설정</a></li>
+    <li><a href="#manifest-설정">Manifest 설정</a></li>
+  </ul>
+
+  <ul>
+    <li><a href="#개발-프로세스"><strong>개발 프로세스</strong></a></li>
+    <li><a href="#사전-작업"><strong>사전 작업</strong></a></li>
+    <li><a href="#kakao-i-sdk-초기화">Kakao i SDK 초기화</a>
+      <ul>
+        <li><a href="#예제-코드"><strong>예제 코드</strong></a></li>
+      </ul>
+    </li>
+    <li><a href="#헤이카카오-가입">헤이카카오 가입</a>
+      <ul>
+        <li><a href="#예제-코드-1"><strong>예제 코드</strong></a></li>
+      </ul>
+    </li>
+    <li><a href="#permission-확인">Permission 확인</a></li>
+    <li><a href="#음성-인식-활성화">음성 인식 활성화</a></li>
+    <li><a href="#클래스-구현">클래스 구현</a>
+      <ul>
+        <li><a href="#예제-코드-2">예제 코드</a></li>
+      </ul>
+    </li>
+    <li><a href="#음성-인식-결과-화면-출력">음성 인식 결과 화면 출력</a></li>
+    <li><a href="#설정-화면-출력">설정 화면 출력</a></li>
   </ul>
 </nav>
 
@@ -211,8 +239,8 @@ https://github.com/alex-shpak/hugo-book
 <table>
 <thead>
 <tr>
-<th>Column 1</th>
-<th>Column 2</th>
+<th>구성요소</th>
+<th>설명</th>
 </tr>
 </thead>
 <tbody>
@@ -254,7 +282,6 @@ https://github.com/alex-shpak/hugo-book
   인터랙션 시나리오
   <a class="anchor" href="#%ec%9d%b8%ed%84%b0%eb%9e%99%ec%85%98-%ec%8b%9c%eb%82%98%eb%a6%ac%ec%98%a4">#</a>
 </h2>
-<hr>
 <p>다음은 사용자가 “오늘 날씨 알려줘&quot;라는 음성 명령을 발화했을 때, 사용자, 벤더 애플리케이션, SDK 간의 인터랙션을 정리한 시나리오입니다.</p>
 <ol>
 <li>Wallpad 디바이스에서 Kakao i SDK for Wallpad를 사용하기 위해 SDK 초기화를 수행합니다.</li>
@@ -272,7 +299,418 @@ https://github.com/alex-shpak/hugo-book
 </ul>
 <p><img src="https://i.imgur.com/Wu8s2AM.png" alt="" />
 그림1. 인터랙션 시나리오</p>
-</article>
+<h2 id="android-studio-설정">
+  Android Studio 설정
+  <a class="anchor" href="#android-studio-%ec%84%a4%ec%a0%95">#</a>
+</h2>
+<h2 id="프로젝트에서-sdk-사용">
+  프로젝트에서 SDK 사용
+  <a class="anchor" href="#%ed%94%84%eb%a1%9c%ec%a0%9d%ed%8a%b8%ec%97%90%ec%84%9c-sdk-%ec%82%ac%ec%9a%a9">#</a>
+</h2>
+<p>프로젝트에서 Kakao i SDK를 사용하기 위해서 다음 순서에 따라 Kakao i SDK를 빌드 의존성으로 추가한 후 불러오기를 진행합니다</p>
+<h2 id="gradle-설정">
+  Gradle 설정
+  <a class="anchor" href="#gradle-%ec%84%a4%ec%a0%95">#</a>
+</h2>
+<ol>
+<li>
+<p><strong>Android Studio</strong> | <strong>New Project</strong>로 이동하여 ****신규 프로젝트를 생성합니다</p>
+</li>
+<li>
+<p>build.gradle로 이동하여 <code>minSdkVersion</code> 레벨을 21, <code>JavaVersion</code>을 8로  설정 후, 애플리케이션의 패키지 이름을 <code>applicationId</code>로 지정합니다.</p>
+<pre><code class="language-groovy=" data-lang="groovy=">android {
+        defaultConfig {
+            ...
+            minSdkVersion 21 //Android SDK API 레벨을 21로 설정
+            applicationId &quot;서버에 등록된 패키지명&quot;
+        }
+
+        compileOptions {
+            //Java 컴파일러 타겟을 Java8로 설정
+            sourceCompatibility JavaVersion.VERSION_1_8
+            targetCompatibility JavaVersion.VERSION_1_8
+        }
+
+        kotlinOptions {
+        //Jvm Target을 1.8로 지정
+            jvmTarget = &quot;1.8&quot;
+        }
+    }
+</code></pre><p><strong>참고</strong></p>
+<ul>
+<li>SDK를 사용하기 위해서는 먼저 Kakao i 서버에 애플리케이션의 패키지명을 등록해야 합니다. 자세한 등록 방법은 Kakao i SDK 기획 PM에게 문의 부탁드립니다.</li>
+</ul>
+</li>
+<li>
+<p><code>build.gradle (Project)</code> 파일의 <code>allprojects-repositories</code>  섹션의 <code>mavenCentral()</code> 아래에 각 레포지토리 URL을 추가합니다.</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-groovy" data-lang="groovy">allprojects <span style="color:#f92672">{</span>
+   repositories <span style="color:#f92672">{</span>
+       google<span style="color:#f92672">()</span>
+       jcenter<span style="color:#f92672">()</span>
+       mavenCentral<span style="color:#f92672">()</span>
+       maven <span style="color:#f92672">{</span> url <span style="color:#e6db74">&#39;https://devrepo.kakao.com/nexus/content/groups/public/&#39;</span> <span style="color:#f92672">}</span>
+       <span style="color:#75715e">//출시 시
+</span><span style="color:#75715e"></span>       maven <span style="color:#f92672">{</span> url <span style="color:#e6db74">&#39;http://maven.daumcorp.com/content/repositories/daum&#39;</span> <span style="color:#f92672">}</span>
+       <span style="color:#75715e">//테스트 시
+</span><span style="color:#75715e"></span>       maven <span style="color:#f92672">{</span> url <span style="color:#e6db74">&#39;http://maven.daumcorp.com/content/repositories/daum-snapshots&#39;</span> <span style="color:#f92672">}</span>
+   <span style="color:#f92672">}</span>
+</code></pre></div><p><a href="https://www.notion.so/fc23817eb8054ac2966e6319fa0ffc86">표. Maven Repository 경로</a></p>
+<p><strong>주의</strong></p>
+<ul>
+<li>Release(출시)와 Snapshots(테스트)의 Maven Repository 경로가 상이하므로, 반드시 의존성 구분과 개발 단계를 확인한 후에 해당 경로를 추가해야 합니다.</li>
+</ul>
+</li>
+<li>
+<p><code>build.gradle (module: app)</code> 파일에 SDK 의존성 항목을 추가합니다.</p>
+<p><a href="https://www.notion.so/b6c0e399a9ed43aa840f6aeb7af79c05">표. Kakao i SDK 의존성</a></p>
+</li>
+<li>
+<p>SDK 최신 버전을 컴파일하기 위해 <code>build.gradle (module: app)</code> 파일의 <code>dependencies {}</code> 섹션에 다음을 추가합니다.</p>
+</li>
+</ol>
+<ul>
+<li>
+<p>Kakao i SDK의 의존성 항목은 향후 추가 및 변경될 수 있으므로, 최신 정보는 Kakao i PM에게 문의 부탁드립니다.</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-groovy" data-lang="groovy">dependencies <span style="color:#f92672">{</span>
+       implementation <span style="color:#e6db74">&#39;com.kakao.sdk:usermgmt:1.27.0&#39;</span>
+       implementation <span style="color:#e6db74">&#39;com.kakao.i:sdk-android:1.2.6.24&#39;</span>
+    <span style="color:#f92672">}</span>
+</code></pre></div></li>
+</ul>
+<ol start="6">
+<li>프로젝트를 빌드하면, Kakao i SDK를 애플리케이션에 가져올 수 있습니다.</li>
+</ol>
+<h2 id="manifest-설정">
+  Manifest 설정
+  <a class="anchor" href="#manifest-%ec%84%a4%ec%a0%95">#</a>
+</h2>
+<p>사용자 권한을 획득하기 위해서 Android Manifest를 업데이트합니다.</p>
+<ol>
+<li>
+<p>Project/&hellip;/<code>AndroidManifest.xml</code> 파일을 오픈합니다.</p>
+</li>
+<li>
+<p>다음 Manifest 권한 획득 표를 참고하여, 필요한 퍼미션을 업데이트합니다.</p>
+<p><a href="https://www.notion.so/06c435a50b8a484c95bde371c7292498">표. Mainfest 권한 획득</a></p>
+</li>
+</ol>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-xml" data-lang="xml"><span style="color:#f92672">&lt;uses-permission</span> <span style="color:#a6e22e">android:name=</span><span style="color:#e6db74">&#34;android.permission.INTERNET&#34;</span> <span style="color:#f92672">/&gt;</span>
+<span style="color:#f92672">&lt;uses-permission</span> <span style="color:#a6e22e">android:name=</span><span style="color:#e6db74">&#34;android.permission.RECORD_AUDIO&#34;</span> <span style="color:#f92672">/&gt;</span>
+<span style="color:#f92672">&lt;uses-permission</span> <span style="color:#a6e22e">android:name=</span><span style="color:#e6db74">&#34;android.permission.READ_CONTACTS&#34;</span> <span style="color:#f92672">/&gt;</span>
+<span style="color:#f92672">&lt;uses-permission</span> <span style="color:#a6e22e">android:name=</span><span style="color:#e6db74">&#34;android.permission.CALL_PHONE&#34;</span><span style="color:#f92672">/&gt;</span>
+</code></pre></div><p><strong>참고</strong></p>
+<ul>
+<li>Manifest에 퍼미션 허용에 대한 상세 내용은 <a href="https://developer.android.com/guide/topics/manifest/uses-permission-element">Google Developers</a> 사이트에서 확인하실 수 있습니다.</li>
+</ul>
+<h1 id="음성-인식-개발-프로세스">
+  음성 인식 개발 프로세스
+  <a class="anchor" href="#%ec%9d%8c%ec%84%b1-%ec%9d%b8%ec%8b%9d-%ea%b0%9c%eb%b0%9c-%ed%94%84%eb%a1%9c%ec%84%b8%ec%8a%a4">#</a>
+</h1>
+<h2 id="개발-프로세스">
+  <strong>개발 프로세스</strong>
+  <a class="anchor" href="#%ea%b0%9c%eb%b0%9c-%ed%94%84%eb%a1%9c%ec%84%b8%ec%8a%a4">#</a>
+</h2>
+<p>Android Studio 설정을 완료 후, 아래 순서에 따라 Kakao i SDK 연동 개발을 진행합니다.</p>
+<h2 id="사전-작업">
+  <strong>사전 작업</strong>
+  <a class="anchor" href="#%ec%82%ac%ec%a0%84-%ec%9e%91%ec%97%85">#</a>
+</h2>
+<p>음성 인식 개발 프로세스를 정상적으로 수행하기 위해서는 다음의 사전 작업이 필요합니다.</p>
+<ul>
+<li>Kakao SDK 연동</li>
+<li>프로젝트에 Kakao SDK가 연동되어있지 않은 경우, Kakao Developers 사이트의 <a href="https://developers.kakao.com/docs/latest/ko/getting-started/sdk-android">Kakao SDK v2 사용법</a>에 따라 연동 작업을 진행합니다.</li>
+<li><a href="https://developers.kakao.com/">Kakao Developers</a>에 애플리케이션 등록</li>
+<li><a href="https://developers.kakao.com/">Kakao Developers</a>에 애플리케이션을 생성하는 방법은 Kakao i PM에게 문의 부탁드립니다.</li>
+</ul>
+<h2 id="kakao-i-sdk-초기화">
+  Kakao i SDK 초기화
+  <a class="anchor" href="#kakao-i-sdk-%ec%b4%88%ea%b8%b0%ed%99%94">#</a>
+</h2>
+<p>Kakao i SDK를 초기화하기 위해서 하기 순서에 따라 <code>Application.onCreate()</code> 메서드에서  <code>KakaoI</code> 클래스에 내장된 메서드들을 체이닝 방식으로 확장합니다.</p>
+<ol>
+<li>
+<p>사전에 협의된 Phase 정보를 <code>KakaoI.with()</code>항목에 입력합니다.</p>
+<ul>
+<li>
+<p>사용 가능 Phase는 <code>sandbox</code>, <code>stage</code>, <code>real</code>이며, Phase 정보를 확인해야 할 경우 Kakao i PM에 문의 부탁드립니다.</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-kotlin" data-lang="kotlin">KakaoI.with(applicationContext, <span style="color:#e6db74">&#34;{사용 가능 Phase}&#34;</span>)
+</code></pre></div></li>
+</ul>
+</li>
+<li>
+<p>Kakao 계정 인증 정보를 Kakao i SDK로 전달을 위해 <code>provideKakaoIAuth()</code>을 확장합니다.</p>
+<ul>
+<li>모듈 확장 시, Kakao SDK에서 전달받은 인증 정보로 Access Token, Refresh Token, AppUser ID 정보를 제공하는 인터페이스가 구현되어야 합니다. 이 정보는 로그인 시점, 유저 확인 시점 등에서 Lazy 프로퍼티를 호출하며, 호출 시점에 값이 제공되지 않으면 오류가 발생합니다.</li>
+</ul>
+<p>**참고
+*** <code>AppUserId</code>의 경우 모바일앱의 appUserId로서, Kakao SDK에서 제공하는 Access Token Info에서 확인 가능합니다. 자세한 설명은 <a href="https://developers.kakao.com/docs/latest/ko/kakaologin/android#token-mgmt">Kakao Developers &gt; 토큰관리</a>를 참고 부탁드립니다.</p>
+<ul>
+<li>Kakao SDK 초기화 및 개발 환경 설정은 <a href="https://developers.kakao.com/docs/latest/ko/getting-started/env">Kakao Developers</a>의 구현 방식을 기반으로 합니다.</li>
+</ul>
+</li>
+<li>
+<p>Kakao i 서버로  패키지 정보 전달을 위해 <code>providePackageInfo()</code>을 확장합니다.</p>
+<ul>
+<li>확장 시에는 Package Name, Version Name, Version Code 정보를 포함하고 있는<code>packageInfo</code>를 구현해야 합니다.</li>
+<li>Version Name과 Version Code 값을 별도로 지정하지 않을 경우에는 Default 값으로 전달됩니다.</li>
+</ul>
+<p><strong>참고</strong></p>
+<ul>
+<li>Kakao i SDK를 사용하기 위해서는 Package Name을 Kakao i 서버에 미리 등록해야 합니다. 자세한 등록 방법은 Kakao i SDK PM에게 문의 부탁드립니다.</li>
+</ul>
+</li>
+<li>
+<p>만약 Kakao i SDK에 기본 탑재된 View Template이 아닌 다른 View Template을 구현해서 사용할 경우,  <code>provideTemplateHandler()</code>을 확장합니다.</p>
+<ul>
+<li><a href="https://www.notion.so/Android-Studio-7db86e9315374e88ad422016af64bdd0#dacf2a5193dd4cd7b0bf0fd5023c979d">의존성 추가</a> 작업 시, <code>com.kakao.i:sdk-android-agent</code>항목 추가가 필요합니다.</li>
+</ul>
+</li>
+</ol>
+<h3 id="예제-코드">
+  <strong>예제 코드</strong>
+  <a class="anchor" href="#%ec%98%88%ec%a0%9c-%ec%bd%94%eb%93%9c">#</a>
+</h3>
+<p>다음은 <code>provideKakaoIAuth()</code>, <code>providePackageInfo()</code>, <code>provideTemplateHandler()</code> 메서드를 사용하여 Kakao i SDK를 초기화한 예시입니다.</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-kotlin" data-lang="kotlin"><span style="color:#66d9ef">override</span> <span style="color:#66d9ef">fun</span> <span style="color:#a6e22e">onCreate</span>() {
+   KakaoI.with(applicationContext, <span style="color:#e6db74">&#34;sandbox&#34;</span>)
+       .module(<span style="color:#66d9ef">object</span> <span style="color:#960050;background-color:#1e0010">: </span><span style="color:#a6e22e">Module</span>() {
+           <span style="color:#66d9ef">override</span> <span style="color:#66d9ef">fun</span> <span style="color:#a6e22e">provideKakaoIAuth</span>(): KakaoIAuth {
+               <span style="color:#66d9ef">return</span> <span style="color:#66d9ef">object</span> <span style="color:#960050;background-color:#1e0010">: </span><span style="color:#a6e22e">KakaoIAuth</span> {
+                   <span style="color:#66d9ef">override</span> <span style="color:#66d9ef">fun</span> <span style="color:#a6e22e">getAccessToken</span>(): String? =
+                       Session.getCurrentSession().tokenInfo.accessToken
+
+                   <span style="color:#66d9ef">override</span> <span style="color:#66d9ef">fun</span> <span style="color:#a6e22e">getRefreshToken</span>(): String? =
+                       Session.getCurrentSession().tokenInfo.refreshToken
+
+                   <span style="color:#66d9ef">override</span> <span style="color:#66d9ef">fun</span> <span style="color:#a6e22e">getAppUserId</span>(): Long =
+                       getSharedPreferences(<span style="color:#e6db74">&#34;name&#34;</span>, Context.MODE_PRIVATE)
+                           .getLong(Constants.APP_USER_ID, <span style="color:#ae81ff">0L</span>)
+
+               }
+           }
+
+           <span style="color:#66d9ef">override</span> <span style="color:#66d9ef">fun</span> <span style="color:#a6e22e">providePackageInfo</span>(context: Context): PackageInfo {
+               <span style="color:#66d9ef">val</span> packageInfo = <span style="color:#66d9ef">super</span>.providePackageInfo(context)
+               packageInfo.packageName = getString(R.string.package_info)
+               <span style="color:#66d9ef">return</span> packageInfo
+           }
+
+           <span style="color:#66d9ef">override</span> <span style="color:#66d9ef">fun</span> <span style="color:#a6e22e">provideTemplateHandler</span>(context: Context): TemplateManager =
+                  TemplateManager(context, TemplateRenderer())
+
+       })
+       .init()
+}
+</code></pre></div><p><a href="https://www.notion.so/7459a03038644037a18c2e88a330a1a6"> 표. Kakao i SDK 모듈</a></p>
+<h2 id="헤이카카오-가입">
+  헤이카카오 가입
+  <a class="anchor" href="#%ed%97%a4%ec%9d%b4%ec%b9%b4%ec%b9%b4%ec%98%a4-%ea%b0%80%ec%9e%85">#</a>
+</h2>
+<p><a href="https://www.notion.so/f16eb5dcc57f48979a8b620e1ef4aac0#87082a4afb4c496cbd454ce481d61c0b">https://www.notion.so/f16eb5dcc57f48979a8b620e1ef4aac0#87082a4afb4c496cbd454ce481d61c0b</a></p>
+<p>Kakao i 음성 인식 서비스를 이용하기 위해서 사용자는 <a href="https://kakao.ai/hey-kakao">헤이카카오 서비스</a>에 가입해야 합니다. Kakao i SDK에는 자체적으로 헤이카카오 서비스 가입 프로세스가 구현되어 있습니다.</p>
+<ul>
+<li>헤이카카오 서비스는 Kakao 계정으로 가입할 수 있습니다.</li>
+</ul>
+<ol>
+<li>
+<p><code>KakaoI.checkAccount()</code>를 호출합니다.</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-kotlin" data-lang="kotlin">KakaoI.checkAccount()
+</code></pre></div></li>
+<li>
+<p>헤이카카오 계정을 확인 후, <code>checkAccount()</code> 콜백(Callback) 메서드로 현재 Kakao 계정 상태를 전달합니다.</p>
+<ul>
+<li>각 메서드에 대한 설명을 참고하여, 필요 시 후속 진행 작업을 수행합니다.</li>
+</ul>
+</li>
+</ol>
+<p><a href="https://www.notion.so/65ef8251325a41ec83d99078e74f2f44">표. checkAccount 콜백</a></p>
+<h3 id="예제-코드-1">
+  <strong>예제 코드</strong>
+  <a class="anchor" href="#%ec%98%88%ec%a0%9c-%ec%bd%94%eb%93%9c-1">#</a>
+</h3>
+<p>다음은 <code>checkAccount()</code> 콜백 메서드를 사용한 예제입니다.</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-kotlin" data-lang="kotlin"><span style="color:#75715e">//유저 상태를 확인하여 다음으로 수행해야할 Intent를 알려주거나 오류 상태를 전달 하는 Callback Interface
+</span><span style="color:#75715e"></span>KakaoI.checkAccount(<span style="color:#66d9ef">object</span> <span style="color:#960050;background-color:#1e0010">: </span><span style="color:#a6e22e">KakaoI</span>.OnCheckCallback {
+   <span style="color:#66d9ef">override</span> <span style="color:#66d9ef">fun</span> <span style="color:#a6e22e">onSuccess</span>() {
+   <span style="color:#75715e">/**
+</span><span style="color:#75715e">   * 사용자 상태 및 토큰 정보가 정상 으로 사용 가능한 상태
+</span><span style="color:#75715e">   */</span>
+   }
+
+   <span style="color:#66d9ef">override</span> <span style="color:#66d9ef">fun</span> <span style="color:#a6e22e">onAuthorizeFailed</span>() {
+   <span style="color:#75715e">/**
+</span><span style="color:#75715e">   * AccessToken이 만료된 경우로, 인증 토큰 갱신 후 재시도 필요
+</span><span style="color:#75715e">   */</span>
+   }
+
+   <span style="color:#66d9ef">override</span> <span style="color:#66d9ef">fun</span> <span style="color:#a6e22e">onSignUpRequired</span>(intentSupplier: KakaoI.IntentSupplier) {
+   <span style="color:#75715e">/**
+</span><span style="color:#75715e">   * 사용자가 Kakao i를 사용하고 있지 않은 상태로, Kakao i 가입이 요구되며,
+</span><span style="color:#75715e">   * 가입 Intent 가 전달되며 startActivity 로 Intent를 수행할 수 있음
+</span><span style="color:#75715e">   */</span>
+   }
+
+   <span style="color:#66d9ef">override</span> <span style="color:#66d9ef">fun</span> <span style="color:#a6e22e">onAgreementRequired</span>(intentSupplier: KakaoI.IntentSupplier) {
+   <span style="color:#75715e">/**
+</span><span style="color:#75715e">   * 사용자가 추가로 동의해야할 약관이 존재할 경우 호출되며,
+</span><span style="color:#75715e">   * 약관동의 Intent 가 전달되며 startActivity 로 Intent를 수행할 수 있음
+</span><span style="color:#75715e">   */</span>
+   }
+
+   <span style="color:#66d9ef">override</span> <span style="color:#66d9ef">fun</span> <span style="color:#a6e22e">onError</span>(p0: Exception?) {
+   <span style="color:#75715e">/**
+</span><span style="color:#75715e">   * 정의되지 않은 오류가 발생함
+</span><span style="color:#75715e">   */</span>
+
+   }
+})
+</code></pre></div><h2 id="permission-확인">
+  Permission 확인
+  <a class="anchor" href="#permission-%ed%99%95%ec%9d%b8">#</a>
+</h2>
+<p>다음의 권한(Runtime Permission)을 Manifest에 추가하여, 사용자가 런타임에 각 권한을 승인하도록 요청합니다. 자세한 설명은 Google Developers 사이트의 <a href="https://developer.android.com/training/permissions/requesting?hl=ko">Android 개발자 &gt; 앱 권한 요청</a>에서 확인할 수 있습니다.</p>
+<p><a href="https://www.notion.so/152fcef17b2247648f70643ce74f6074">표. Runtime Permission</a></p>
+<h2 id="음성-인식-활성화">
+  음성 인식 활성화
+  <a class="anchor" href="#%ec%9d%8c%ec%84%b1-%ec%9d%b8%ec%8b%9d-%ed%99%9c%ec%84%b1%ed%99%94">#</a>
+</h2>
+<p>Kakao i 음성 인식을 활성화하기 위해 False(Default)로 설정되어 있는 초기값을 <code>KakaoI.setEnabled()</code> 메드를 사용하여 True 값으로 변경합니다.</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-kotlin" data-lang="kotlin">KakaoI.setEnabled(<span style="color:#66d9ef">true</span>)
+</code></pre></div><p><strong>참고</strong></p>
+<ul>
+<li>Wake-up word(호출명령어)의 초기 값은 “헤이카카오”로 고정되지만, 최종 사용자는 설정 화면에서 다른 Wake-up word를 설정할 수 있습니다.</li>
+<li>Wake-up word가 유입될 때, 발화 효과음을 재생하는 과정은 Kakao i SDK 내부적으로 수행됩니다.</li>
+</ul>
+<h2 id="클래스-구현">
+  클래스 구현
+  <a class="anchor" href="#%ed%81%b4%eb%9e%98%ec%8a%a4-%ea%b5%ac%ed%98%84">#</a>
+</h2>
+<p>음성 인식 결과 값을 애플리케이션으로 가져오기 위해서는 각 음성 인식 단계에서 클래스를 구현 및 정의해야 합니다. 각 클래스에 대한 상세 API는 본 가이드의 <a href="https://www.notion.so/API-d3f8f05ce721469b80180e291ed47526">API 레퍼런스</a> ****챕터에서 확인하실 수 있습니다.</p>
+<p><a href="https://www.notion.so/291e451b8c5f424ca814157eeed2fe62">표. 음성 요청 클래스 구현</a></p>
+<p><strong>참고</strong></p>
+<ul>
+<li>음성 요청 클래스에 대한 상세 API는 본 가이드의 <a href="https://www.notion.so/API-f0b72e3171a04ab79f4279050ae7196e">API 레퍼런스</a> 챕터에서 확인하실 수 있습니다.</li>
+</ul>
+<p><img src="Untitled%20d5b58263a22346eba1adc20f8a794463/Untitled.png" alt="Untitled%20d5b58263a22346eba1adc20f8a794463/Untitled.png" /></p>
+<ol>
+<li><strong>초기화</strong>
+<ul>
+<li>애플리케이션에서 <code>KakaoI.startListen()</code> 메서드를 호출하고, <code>KakaoIListeningBinder</code>를 반환받습니다.</li>
+<li><code>KakaoI.startListen()</code>의 파라미터로 <code>KakaoIListeningBinder.EventListener</code> 콜백이 등록되면, 음성 인식 상태를 전달 받을 수 있습니다.</li>
+</ul>
+</li>
+<li><strong>음성 인식</strong>
+<ul>
+<li>애플리케이션에서 <code>requestRecognition()</code> 메서드를 호출하여 음성 인식을 시작합니다.  음성 인식 상태에 따라 등록된 <code>EventListner</code> 콜백 함수가 호출됩니다.</li>
+</ul>
+</li>
+<li><strong>음성 인식 종료</strong>
+<ul>
+<li><code>stopRecognition()</code> 메서드를 호출하여 음성 인식을 중간에 종료할 수 있습니다.</li>
+</ul>
+</li>
+</ol>
+<h3 id="예제-코드-2">
+  예제 코드
+  <a class="anchor" href="#%ec%98%88%ec%a0%9c-%ec%bd%94%eb%93%9c-2">#</a>
+</h3>
+<p>음성 인식 클래스 구현 시 필요한 샘플 코드는 다음과 같습니다.</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-kotlin" data-lang="kotlin"><span style="color:#66d9ef">class</span> <span style="color:#a6e22e">RecognizeActivity</span> : Activity {
+   <span style="color:#66d9ef">private</span> <span style="color:#66d9ef">var</span> listeningBinder: KakaoIListeningBinder? = <span style="color:#66d9ef">null</span>
+
+   <span style="color:#66d9ef">fun</span> <span style="color:#a6e22e">start</span>() {
+       listeningBinder = KakaoI.startListen(<span style="color:#66d9ef">this</span>@MainActivity, eventListener)
+       listeningBinder<span style="color:#f92672">!!</span>.addListener(stateListener)
+   }
+
+   <span style="color:#66d9ef">fun</span> <span style="color:#a6e22e">stop</span>() {
+       listeningBinder<span style="color:#f92672">?.</span>stopListen()
+       listeningBinder = <span style="color:#66d9ef">null</span>
+   }
+
+   <span style="color:#75715e">// Wake-up-word 없이 바로 Wake-up
+</span><span style="color:#75715e"></span>   <span style="color:#66d9ef">fun</span> <span style="color:#a6e22e">requestRecognition</span>() {
+       listeningBinder<span style="color:#f92672">?.</span>requestRecognition()
+   }
+
+   <span style="color:#75715e">// 음성 인식 종료 (이미 녹음된 데이터가 존재할 경우, 해당 데이터로 음성 인식이 될 수도있음)
+</span><span style="color:#75715e"></span>   <span style="color:#66d9ef">fun</span> <span style="color:#a6e22e">stopRecognition</span>() {
+       listeningBinder<span style="color:#f92672">?.</span>stopRecognition()
+   }
+
+   <span style="color:#75715e">// 음성이 입력중일 경우 음성 인식은 취소되며, 현재 진행중인 음성 인식 컨텍스트가 있다면 음성 인식은 종료됩니다.
+</span><span style="color:#75715e"></span>   <span style="color:#66d9ef">fun</span> <span style="color:#a6e22e">cancelDialog</span>() {
+       listeningBinder<span style="color:#f92672">?.</span>cancelDialog()
+   }
+
+   <span style="color:#75715e">// KVS 연결 상황에서 발생할 수 잇는 오류들을 처리하는 callback
+</span><span style="color:#75715e"></span>   <span style="color:#66d9ef">private</span> <span style="color:#66d9ef">val</span> eventListener = <span style="color:#66d9ef">object</span> <span style="color:#960050;background-color:#1e0010">: </span><span style="color:#a6e22e">KakaoIListeningBinder</span>.EventListener {
+       <span style="color:#66d9ef">override</span> <span style="color:#66d9ef">fun</span> <span style="color:#a6e22e">onMicUnavailable</span>() {
+           <span style="color:#75715e">// Microphone 사용 불가 에러 상황
+</span><span style="color:#75715e"></span>       }
+
+       <span style="color:#66d9ef">override</span> <span style="color:#66d9ef">fun</span> <span style="color:#a6e22e">onError</span>(e: Exception?) {
+           <span style="color:#75715e">// 에러 상황
+</span><span style="color:#75715e"></span>       }
+
+       <span style="color:#66d9ef">override</span> <span style="color:#66d9ef">fun</span> <span style="color:#a6e22e">onAgreementRequired</span>(followingIntentFunc: KakaoI.IntentSupplier) {
+           <span style="color:#75715e">// 추가 약관 동의가 필요한 상황
+</span><span style="color:#75715e"></span>           <span style="color:#66d9ef">this</span>@MainActivity.onAgreementRequired(followingIntentFunc.supply(<span style="color:#66d9ef">this</span>@MainActivity))
+       }
+
+       <span style="color:#66d9ef">override</span> <span style="color:#66d9ef">fun</span> <span style="color:#a6e22e">onStartListen</span>() {
+           <span style="color:#75715e">// 웨이크업 대기 상태 진입
+</span><span style="color:#75715e"></span>       }
+
+       <span style="color:#66d9ef">override</span> <span style="color:#66d9ef">fun</span> <span style="color:#a6e22e">onStopListen</span>() {
+           <span style="color:#75715e">// 웨이크업이 안되는 상태 진입, Microphone 사용하지 않음
+</span><span style="color:#75715e"></span>       }
+
+       <span style="color:#66d9ef">override</span> <span style="color:#66d9ef">fun</span> <span style="color:#a6e22e">onWithdrawal</span>() {
+           <span style="color:#75715e">// 서비스 탈퇴됨
+</span><span style="color:#75715e"></span>       }
+
+       <span style="color:#66d9ef">override</span> <span style="color:#66d9ef">fun</span> <span style="color:#a6e22e">onAuthorizeFailed</span>() {
+           <span style="color:#75715e">// 인증 실패
+</span><span style="color:#75715e"></span>       }
+   }
+
+   <span style="color:#75715e">// 음성 인식 상태를 모니터링 하는 callback
+</span><span style="color:#75715e"></span>   <span style="color:#66d9ef">private</span> stateListener = <span style="color:#66d9ef">object</span> <span style="color:#960050;background-color:#1e0010">: </span><span style="color:#a6e22e">KakaoI</span>.StateListener {
+       <span style="color:#66d9ef">override</span> <span style="color:#66d9ef">fun</span> <span style="color:#a6e22e">onStateChanged</span>(state: Int) {
+           <span style="color:#75715e">// int STATE_DEACTIVATED = 1;
+</span><span style="color:#75715e"></span>           <span style="color:#75715e">// int STATE_IDLE = 2;
+</span><span style="color:#75715e"></span>           <span style="color:#75715e">// int STATE_RECOGNIZING = 3;
+</span><span style="color:#75715e"></span>           <span style="color:#75715e">// int STATE_PROCESSING = 4;      
+</span><span style="color:#75715e"></span>       }
+
+       <span style="color:#66d9ef">override</span> <span style="color:#66d9ef">fun</span> <span style="color:#a6e22e">onPartialResult</span>(result: String?) {
+           <span style="color:#75715e">// 부분 인식 결과
+</span><span style="color:#75715e"></span>       }
+
+       <span style="color:#66d9ef">override</span> <span style="color:#66d9ef">fun</span> <span style="color:#a6e22e">onResult</span>(result: String?) {
+           <span style="color:#75715e">// 최종 인식 결과
+</span><span style="color:#75715e"></span>       }
+   }
+}
+</code></pre></div><h2 id="음성-인식-결과-화면-출력">
+  음성 인식 결과 화면 출력
+  <a class="anchor" href="#%ec%9d%8c%ec%84%b1-%ec%9d%b8%ec%8b%9d-%ea%b2%b0%ea%b3%bc-%ed%99%94%eb%a9%b4-%ec%b6%9c%eb%a0%a5">#</a>
+</h2>
+<p>Kakao i SDK에서는 음성 인식 결과를 UI 화면으로 출력할 때, View Template이라는 레이아웃 화면을 사용합니다.
+Kakao i SDK는 기본적인 View Template을 제공하지만, 클라이언트의 특정 서비스에 맞춰서 View Template 수정도 가능합니다. 수정된 View Template 사용 시,  <a href="https://www.notion.so/0b662a19f26547fa8b521dbf745de0d7#908935e94c3f49d2a132d42ef63e71ca">Kakao i SDK 초기화</a>를 수행할 때 <code>[provideTemplateHandler()](https://www.notion.so/9a14363c2a8b47099ba3e7c2b42afc4a?v=5d571b9986ea4f60b5e6845e2710b45d)</code> 메드를 호출해야합니다.</p>
+<p><strong>참고</strong></p>
+<ul>
+<li>View Template 수정 시에도  음성 답변은 Kakao i SDK를 통해 재생됩니다.</li>
+<li>View Template 구현에 관한 자세한 내용은 [Kakao i Engine] View Template 가이드를 참고하시기 바랍니다.</li>
+</ul>
+<h2 id="설정-화면-출력">
+  설정 화면 출력
+  <a class="anchor" href="#%ec%84%a4%ec%a0%95-%ed%99%94%eb%a9%b4-%ec%b6%9c%eb%a0%a5">#</a>
+</h2>
+<p><code>KakaoI.startSettingActivity(getContext()</code> 메서드를 호출하여 Kakao i 설정 화면을 최종 사용자에게 출력합니다.</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-kotlin" data-lang="kotlin">* KakaoI.startSettingActivity(getContext(), error -&gt; <span style="color:#75715e">/* Do something on error */</span>)
+</code></pre></div></article>
  
       
 
@@ -312,6 +750,34 @@ https://github.com/alex-shpak/hugo-book
       </ul>
     </li>
     <li><a href="#인터랙션-시나리오">인터랙션 시나리오</a></li>
+    <li><a href="#android-studio-설정">Android Studio 설정</a></li>
+    <li><a href="#프로젝트에서-sdk-사용">프로젝트에서 SDK 사용</a></li>
+    <li><a href="#gradle-설정">Gradle 설정</a></li>
+    <li><a href="#manifest-설정">Manifest 설정</a></li>
+  </ul>
+
+  <ul>
+    <li><a href="#개발-프로세스"><strong>개발 프로세스</strong></a></li>
+    <li><a href="#사전-작업"><strong>사전 작업</strong></a></li>
+    <li><a href="#kakao-i-sdk-초기화">Kakao i SDK 초기화</a>
+      <ul>
+        <li><a href="#예제-코드"><strong>예제 코드</strong></a></li>
+      </ul>
+    </li>
+    <li><a href="#헤이카카오-가입">헤이카카오 가입</a>
+      <ul>
+        <li><a href="#예제-코드-1"><strong>예제 코드</strong></a></li>
+      </ul>
+    </li>
+    <li><a href="#permission-확인">Permission 확인</a></li>
+    <li><a href="#음성-인식-활성화">음성 인식 활성화</a></li>
+    <li><a href="#클래스-구현">클래스 구현</a>
+      <ul>
+        <li><a href="#예제-코드-2">예제 코드</a></li>
+      </ul>
+    </li>
+    <li><a href="#음성-인식-결과-화면-출력">음성 인식 결과 화면 출력</a></li>
+    <li><a href="#설정-화면-출력">설정 화면 출력</a></li>
   </ul>
 </nav>
 
