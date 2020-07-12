@@ -43,5 +43,17 @@ https://cbt-kw-api.kkep.io/v1/*{API 종류}.{API 이름}*  API 종류: 각 API�
 Bot 인증 #  Bot 등록 과정에서 전달받은 인증토큰(Access Token)을 HTTP 요청(Request)의 Authorization 헤더를 통해 전달하여 어떤 Bot에서 받은 요청인지 인증 및 권한을 검사해야 합니다.</description>
     </item>
     
+    <item>
+      <title></title>
+      <link>http://example.org/kakao_i/sdk_for_wallpad_kor_v1.0.0/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://example.org/kakao_i/sdk_for_wallpad_kor_v1.0.0/</guid>
+      <description>SDK for Wallpad_KOR_v.1.0 #  시작하기 #  이 문서는 Wallpad 디바이스에서 Kakao i 음성 인식 서비스를 사용하기 위하여 Kakao i SDK for Wallpad를 이용한 개발 가이드로서, 고객사의 개발자를 대상으로 작성되었습니다.
+Kakao i SDK for Wallpad는 기본적으로 사용자의 음성 명령을 입력받고, 명령어를 분석하여 사용자 요청에 맞는 응답(음성 또는 UI)을 출력하는 기능을 제공합니다.
+참고
+ 이 문서는 Kakao i Android SDK Version 1.2.4.18를 기반으로 작성되었으며, Android API 21을 필요로 합니다.  Kakao i SDK 구성 요소 #  Kakao i SDK for Wallpad의 구성 요소는 다음과 같습니다.</description>
+    </item>
+    
   </channel>
 </rss>

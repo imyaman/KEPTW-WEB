@@ -27,11 +27,19 @@
   </url>
   
   <url>
+    <loc>http://example.org/kakao_i/sdk_for_wallpad_kor_v1.0.0/</loc>
+  </url>
+  
+  <url>
     <loc>http://example.org/categories/</loc>
   </url>
   
   <url>
     <loc>http://example.org/</loc>
+  </url>
+  
+  <url>
+    <loc>http://example.org/kakao_i/</loc>
   </url>
   
   <url>
