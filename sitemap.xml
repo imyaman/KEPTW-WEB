@@ -27,6 +27,18 @@
   </url>
   
   <url>
+    <loc>http://example.org/kakao_i/sdk_for_wallpad_kor/android_studio_setting/</loc>
+  </url>
+  
+  <url>
+    <loc>http://example.org/kakao_i/sdk_for_wallpad_kor/startup/</loc>
+  </url>
+  
+  <url>
+    <loc>http://example.org/kakao_i/sdk_for_wallpad_kor/stt_dev_process/</loc>
+  </url>
+  
+  <url>
     <loc>http://example.org/kakao_i/sdk_for_wallpad_kor_v1.0.0/</loc>
   </url>
   

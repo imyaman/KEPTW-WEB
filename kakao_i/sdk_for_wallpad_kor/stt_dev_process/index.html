@@ -4,19 +4,17 @@
 <head>
   <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="description" content="SDK for Wallpad_KOR_v.1.0 #  시작하기 #  이 문서는 Wallpad 디바이스에서 Kakao i 음성 인식 서비스를 사용하기 위하여 Kakao i SDK for Wallpad를 이용한 개발 가이드로서, 고객사의 개발자를 대상으로 작성되었습니다.
-Kakao i SDK for Wallpad는 기본적으로 사용자의 음성 명령을 입력받고, 명령어를 분석하여 사용자 요청에 맞는 응답(음성 또는 UI)을 출력하는 기능을 제공합니다.
-참고
- 이 문서는 Kakao i Android SDK Version 1.2.4.18를 기반으로 작성되었으며, Android API 21을 필요로 합니다.  Kakao i SDK 구성 요소 #  Kakao i SDK for Wallpad의 구성 요소는 다음과 같습니다.">
+<meta name="description" content="음성 인식 개발 프로세스 #  개발 프로세스 #  Android Studio 설정을 완료 후, 아래 순서에 따라 Kakao i SDK 연동 개발을 진행합니다.
+사전 작업 #  음성 인식 개발 프로세스를 정상적으로 수행하기 위해서는 다음의 사전 작업이 필요합니다.
+ Kakao SDK 연동 프로젝트에 Kakao SDK가 연동되어있지 않은 경우, Kakao Developers 사이트의 Kakao SDK v2 사용법에 따라 연동 작업을 진행합니다. Kakao Developers에 애플리케이션 등록 Kakao Developers에 애플리케이션을 생성하는 방법은 Kakao i PM에게 문의 부탁드립니다.">
 <meta name="theme-color" content="#FFFFFF"><meta property="og:title" content="" />
-<meta property="og:description" content="SDK for Wallpad_KOR_v.1.0 #  시작하기 #  이 문서는 Wallpad 디바이스에서 Kakao i 음성 인식 서비스를 사용하기 위하여 Kakao i SDK for Wallpad를 이용한 개발 가이드로서, 고객사의 개발자를 대상으로 작성되었습니다.
-Kakao i SDK for Wallpad는 기본적으로 사용자의 음성 명령을 입력받고, 명령어를 분석하여 사용자 요청에 맞는 응답(음성 또는 UI)을 출력하는 기능을 제공합니다.
-참고
- 이 문서는 Kakao i Android SDK Version 1.2.4.18를 기반으로 작성되었으며, Android API 21을 필요로 합니다.  Kakao i SDK 구성 요소 #  Kakao i SDK for Wallpad의 구성 요소는 다음과 같습니다." />
+<meta property="og:description" content="음성 인식 개발 프로세스 #  개발 프로세스 #  Android Studio 설정을 완료 후, 아래 순서에 따라 Kakao i SDK 연동 개발을 진행합니다.
+사전 작업 #  음성 인식 개발 프로세스를 정상적으로 수행하기 위해서는 다음의 사전 작업이 필요합니다.
+ Kakao SDK 연동 프로젝트에 Kakao SDK가 연동되어있지 않은 경우, Kakao Developers 사이트의 Kakao SDK v2 사용법에 따라 연동 작업을 진행합니다. Kakao Developers에 애플리케이션 등록 Kakao Developers에 애플리케이션을 생성하는 방법은 Kakao i PM에게 문의 부탁드립니다." />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="http://example.org/kakao_i/sdk_for_wallpad_kor_v1.0.0/" />
+<meta property="og:url" content="http://example.org/kakao_i/sdk_for_wallpad_kor/stt_dev_process/" />
 
-<title>Sdk for Wallpad Kor V1.0.0 | My New Hugo Site</title>
+<title>Stt Dev Process | My New Hugo Site</title>
 <link rel="manifest" href="/manifest.json">
 <link rel="icon" href="/favicon.png" type="image/x-icon">
 <link rel="stylesheet" href="/book.min.b3215d9d1d18d9051e7fbe8f256ff80e30f41d29073b86348e230d297b771002.css" integrity="sha256-syFdnR0Y2QUef76PJW/4DjD0HSkHO4Y0jiMNKXt3EAI=">
@@ -127,7 +125,7 @@ https://github.com/alex-shpak/hugo-book
         <li>
           
   
-    <a href="/kakao_i/sdk_for_wallpad_kor/stt_dev_process/" class="">Stt Dev Process</a>
+    <a href="/kakao_i/sdk_for_wallpad_kor/stt_dev_process/" class="active">Stt Dev Process</a>
   
 
         </li>
@@ -137,7 +135,7 @@ https://github.com/alex-shpak/hugo-book
         <li>
           
   
-    <a href="/kakao_i/sdk_for_wallpad_kor_v1.0.0/" class="active">Sdk for Wallpad Kor V1.0.0</a>
+    <a href="/kakao_i/sdk_for_wallpad_kor_v1.0.0/" class="">Sdk for Wallpad Kor V1.0.0</a>
   
 
         </li>
@@ -185,7 +183,7 @@ https://github.com/alex-shpak/hugo-book
     <img src="/svg/menu.svg" class="book-icon" alt="Menu" />
   </label>
 
-  <strong>Sdk for Wallpad Kor V1.0.0</strong>
+  <strong>Stt Dev Process</strong>
 
   <label for="toc-control">
     
@@ -201,32 +199,27 @@ https://github.com/alex-shpak/hugo-book
       
   <nav id="TableOfContents">
   <ul>
-    <li><a href="#시작하기">시작하기</a>
+    <li><a href="#개발-프로세스"><strong>개발 프로세스</strong></a></li>
+    <li><a href="#사전-작업"><strong>사전 작업</strong></a></li>
+    <li><a href="#kakao-i-sdk-초기화">Kakao i SDK 초기화</a>
       <ul>
-        <li><a href="#kakao-i-sdk-구성-요소">Kakao i SDK 구성 요소</a></li>
+        <li><a href="#예제-코드"><strong>예제 코드</strong></a></li>
       </ul>
     </li>
-    <li><a href="#인터랙션-시나리오">인터랙션 시나리오</a></li>
-    <li><a href="#android-studio-설정">Android Studio 설정</a>
+    <li><a href="#헤이카카오-가입">헤이카카오 가입</a>
       <ul>
-        <li><a href="#프로젝트에서-sdk-사용">프로젝트에서 SDK 사용</a></li>
-        <li><a href="#gradle-설정">Gradle 설정</a></li>
-        <li><a href="#manifest-설정">Manifest 설정</a></li>
+        <li><a href="#예제-코드-1"><strong>예제 코드</strong></a></li>
       </ul>
     </li>
-    <li><a href="#음성-인식-개발-프로세스">음성 인식 개발 프로세스</a>
+    <li><a href="#permission-확인">Permission 확인</a></li>
+    <li><a href="#음성-인식-활성화">음성 인식 활성화</a></li>
+    <li><a href="#클래스-구현">클래스 구현</a>
       <ul>
-        <li><a href="#개발-프로세스"><strong>개발 프로세스</strong></a></li>
-        <li><a href="#사전-작업"><strong>사전 작업</strong></a></li>
-        <li><a href="#kakao-i-sdk-초기화">Kakao i SDK 초기화</a></li>
-        <li><a href="#헤이카카오-가입">헤이카카오 가입</a></li>
-        <li><a href="#permission-확인">Permission 확인</a></li>
-        <li><a href="#음성-인식-활성화">음성 인식 활성화</a></li>
-        <li><a href="#클래스-구현">클래스 구현</a></li>
-        <li><a href="#음성-인식-결과-화면-출력">음성 인식 결과 화면 출력</a></li>
-        <li><a href="#설정-화면-출력">설정 화면 출력</a></li>
+        <li><a href="#예제-코드-2">예제 코드</a></li>
       </ul>
     </li>
+    <li><a href="#음성-인식-결과-화면-출력">음성 인식 결과 화면 출력</a></li>
+    <li><a href="#설정-화면-출력">설정 화면 출력</a></li>
   </ul>
 </nav>
 
@@ -238,205 +231,19 @@ https://github.com/alex-shpak/hugo-book
 
       
       
-  <article class="markdown"><h1 id="sdk-for-wallpad_kor_v10">
-  SDK for Wallpad_KOR_v.1.0
-  <a class="anchor" href="#sdk-for-wallpad_kor_v10">#</a>
-</h1>
-<h2 id="시작하기">
-  시작하기
-  <a class="anchor" href="#%ec%8b%9c%ec%9e%91%ed%95%98%ea%b8%b0">#</a>
-</h2>
-<p>이 문서는 Wallpad 디바이스에서 Kakao i 음성 인식 서비스를 사용하기 위하여 Kakao i SDK for Wallpad를 이용한 개발 가이드로서, 고객사의 개발자를 대상으로 작성되었습니다.</p>
-<p>Kakao i SDK for Wallpad는 기본적으로 사용자의 음성 명령을 입력받고, 명령어를 분석하여 사용자 요청에 맞는 응답(음성 또는 UI)을 출력하는 기능을 제공합니다.</p>
-<p><strong>참고</strong></p>
-<ul>
-<li>이 문서는  Kakao i Android SDK Version 1.2.4.18를 기반으로 작성되었으며, Android API 21을 필요로 합니다.</li>
-</ul>
-<h3 id="kakao-i-sdk-구성-요소">
-  Kakao i SDK 구성 요소
-  <a class="anchor" href="#kakao-i-sdk-%ea%b5%ac%ec%84%b1-%ec%9a%94%ec%86%8c">#</a>
-</h3>
-<p>Kakao i SDK for Wallpad의 구성 요소는 다음과 같습니다.</p>
-<p>표1. Kakao i SDK for Wallpad의 구성요소</p>
-<table>
-<thead>
-<tr>
-<th>구성요소</th>
-<th>설명</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>Kakao i Agent</td>
-<td>음성 인식 및 인식 상태 전달 등 음성 인식의 주요 기능을 포함하는 모듈입니다.</td>
-</tr>
-<tr>
-<td>Kakao i Client</td>
-<td>Kakao i 서버와 SDK의 연동을 위해, 음성 인식 데이터와 음성 인식 상태 정보를 Kakao i 서버와 송신 및 수신할 때 사용되는 연동 관련 모듈입니다.</td>
-</tr>
-<tr>
-<td>AppClient</td>
-<td>Application의 통신 관련 설정을 할 수 있는 모듈입니다.</td>
-</tr>
-<tr>
-<td>Auditorium</td>
-<td>사용자의 음성 명령을 녹음하고, 녹음된 결과(오디오 버퍼)를 필요한 곳에 공급하는 음성 입력 관련 모듈입니다.</td>
-</tr>
-<tr>
-<td>Dialoid(Wake-up)</td>
-<td>Wake-Up 명령어를 설정하고, 인식된 발화 음성 상태 및 정보를 확인할 수 있는 음성 발화 모듈입니다.</td>
-</tr>
-<tr>
-<td>Kapi Adapter</td>
-<td>Kakao i 음성 인식 서비스 인증 관련 모듈입니다.</td>
-</tr>
-<tr>
-<td>PhoneCall Manager</td>
-<td>전화 걸기 관련 모듈입니다. Wallpad에서 기능 구현 시, Kakao i PM에 문의 부탁드립니다.</td>
-</tr>
-</tbody>
-</table>
-<p><strong>주의</strong></p>
-<ul>
-<li>Kakao i 음성 인식 서비스는 Kakao 서비스와 구분되는 별도의 서비스입니다. Kakao i 음성 인식 서비스를 이용하기 위해서는 헤이카카오 서비스에 가입이 필요하며,  헤이카카오 서비스는 카카오 계정을 통해 가입할 수 있습니다.</li>
-</ul>
-<h2 id="인터랙션-시나리오">
-  인터랙션 시나리오
-  <a class="anchor" href="#%ec%9d%b8%ed%84%b0%eb%9e%99%ec%85%98-%ec%8b%9c%eb%82%98%eb%a6%ac%ec%98%a4">#</a>
-</h2>
-<p>다음은 사용자가 “오늘 날씨 알려줘&quot;라는 음성 명령을 발화했을 때, 사용자, 벤더 애플리케이션, SDK 간의 인터랙션을 정리한 시나리오입니다.</p>
-<ol>
-<li>Wallpad 디바이스에서 Kakao i SDK for Wallpad를 사용하기 위해 SDK 초기화를 수행합니다.</li>
-<li>사용자가 Wake-up word(호출명령어)인 “헤이 카카오!”를 발화하면, SDK는 발화 명령어를 인식하고 발화 효과음을 재생하여 사용자에게 명령어를 입력 받을 수 있는 상태임을 알립니다.</li>
-<li>사용자가 “오늘 날씨 알려줘&quot;라는 음성 명령을 하면, SDK는 사용자 음성 명령을 인식하고, 애플리케이션에 인식 상태를 실시간으로 전달합니다.
-<ul>
-<li>SDK는 명령어 인식을 완료하면 더 이상 사용자 음성을 입력받지 않고, 해당 음성 명령에 대한 응답을 출력합니다.</li>
-</ul>
-</li>
-</ol>
-<p><strong>참고</strong></p>
-<ul>
-<li>응답 결과 출력 시 음성 답변과 함께 UI 템플릿 형식인 View Template이 사용될 수 있습니다.</li>
-<li>자세한 내용은 <a href="https://www.notion.so/c400d4c95b4f46a6bad7bc7e118a8952#c6e319056a4d4d2d87c7566286db2c94">음성인식 결과 화면 출력</a>에서 확인하실 수 있습니다.</li>
-</ul>
-<p><img src="https://i.imgur.com/Wu8s2AM.png" alt="" />
-그림1. 인터랙션 시나리오</p>
-<h2 id="android-studio-설정">
-  Android Studio 설정
-  <a class="anchor" href="#android-studio-%ec%84%a4%ec%a0%95">#</a>
-</h2>
-<h3 id="프로젝트에서-sdk-사용">
-  프로젝트에서 SDK 사용
-  <a class="anchor" href="#%ed%94%84%eb%a1%9c%ec%a0%9d%ed%8a%b8%ec%97%90%ec%84%9c-sdk-%ec%82%ac%ec%9a%a9">#</a>
-</h3>
-<p>프로젝트에서 Kakao i SDK를 사용하기 위해서 다음 순서에 따라 Kakao i SDK를 빌드 의존성으로 추가한 후 불러오기를 진행합니다</p>
-<h3 id="gradle-설정">
-  Gradle 설정
-  <a class="anchor" href="#gradle-%ec%84%a4%ec%a0%95">#</a>
-</h3>
-<ol>
-<li>
-<p><strong>Android Studio</strong> | <strong>New Project</strong>로 이동하여 ****신규 프로젝트를 생성합니다</p>
-</li>
-<li>
-<p>build.gradle로 이동하여 <code>minSdkVersion</code> 레벨을 21, <code>JavaVersion</code>을 8로  설정 후, 애플리케이션의 패키지 이름을 <code>applicationId</code>로 지정합니다.</p>
-<pre><code class="language-groovy=" data-lang="groovy=">android {
-        defaultConfig {
-            ...
-            minSdkVersion 21 //Android SDK API 레벨을 21로 설정
-            applicationId &quot;서버에 등록된 패키지명&quot;
-        }
-
-        compileOptions {
-            //Java 컴파일러 타겟을 Java8로 설정
-            sourceCompatibility JavaVersion.VERSION_1_8
-            targetCompatibility JavaVersion.VERSION_1_8
-        }
-
-        kotlinOptions {
-        //Jvm Target을 1.8로 지정
-            jvmTarget = &quot;1.8&quot;
-        }
-    }
-</code></pre><p><strong>참고</strong></p>
-<ul>
-<li>SDK를 사용하기 위해서는 먼저 Kakao i 서버에 애플리케이션의 패키지명을 등록해야 합니다. 자세한 등록 방법은 Kakao i SDK 기획 PM에게 문의 부탁드립니다.</li>
-</ul>
-</li>
-<li>
-<p><code>build.gradle (Project)</code> 파일의 <code>allprojects-repositories</code>  섹션의 <code>mavenCentral()</code> 아래에 각 레포지토리 URL을 추가합니다.</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-groovy" data-lang="groovy">allprojects <span style="color:#f92672">{</span>
-   repositories <span style="color:#f92672">{</span>
-       google<span style="color:#f92672">()</span>
-       jcenter<span style="color:#f92672">()</span>
-       mavenCentral<span style="color:#f92672">()</span>
-       maven <span style="color:#f92672">{</span> url <span style="color:#e6db74">&#39;https://devrepo.kakao.com/nexus/content/groups/public/&#39;</span> <span style="color:#f92672">}</span>
-       <span style="color:#75715e">//출시 시
-</span><span style="color:#75715e"></span>       maven <span style="color:#f92672">{</span> url <span style="color:#e6db74">&#39;http://maven.daumcorp.com/content/repositories/daum&#39;</span> <span style="color:#f92672">}</span>
-       <span style="color:#75715e">//테스트 시
-</span><span style="color:#75715e"></span>       maven <span style="color:#f92672">{</span> url <span style="color:#e6db74">&#39;http://maven.daumcorp.com/content/repositories/daum-snapshots&#39;</span> <span style="color:#f92672">}</span>
-   <span style="color:#f92672">}</span>
-</code></pre></div><p><a href="https://www.notion.so/fc23817eb8054ac2966e6319fa0ffc86">표. Maven Repository 경로</a></p>
-<p><strong>주의</strong></p>
-<ul>
-<li>Release(출시)와 Snapshots(테스트)의 Maven Repository 경로가 상이하므로, 반드시 의존성 구분과 개발 단계를 확인한 후에 해당 경로를 추가해야 합니다.</li>
-</ul>
-</li>
-<li>
-<p><code>build.gradle (module: app)</code> 파일에 SDK 의존성 항목을 추가합니다.</p>
-<p><a href="https://www.notion.so/b6c0e399a9ed43aa840f6aeb7af79c05">표. Kakao i SDK 의존성</a></p>
-</li>
-<li>
-<p>SDK 최신 버전을 컴파일하기 위해 <code>build.gradle (module: app)</code> 파일의 <code>dependencies {}</code> 섹션에 다음을 추가합니다.</p>
-</li>
-</ol>
-<ul>
-<li>
-<p>Kakao i SDK의 의존성 항목은 향후 추가 및 변경될 수 있으므로, 최신 정보는 Kakao i PM에게 문의 부탁드립니다.</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-groovy" data-lang="groovy">dependencies <span style="color:#f92672">{</span>
-       implementation <span style="color:#e6db74">&#39;com.kakao.sdk:usermgmt:1.27.0&#39;</span>
-       implementation <span style="color:#e6db74">&#39;com.kakao.i:sdk-android:1.2.6.24&#39;</span>
-    <span style="color:#f92672">}</span>
-</code></pre></div></li>
-</ul>
-<ol start="6">
-<li>프로젝트를 빌드하면, Kakao i SDK를 애플리케이션에 가져올 수 있습니다.</li>
-</ol>
-<h3 id="manifest-설정">
-  Manifest 설정
-  <a class="anchor" href="#manifest-%ec%84%a4%ec%a0%95">#</a>
-</h3>
-<p>사용자 권한을 획득하기 위해서 Android Manifest를 업데이트합니다.</p>
-<ol>
-<li>
-<p>Project/&hellip;/<code>AndroidManifest.xml</code> 파일을 오픈합니다.</p>
-</li>
-<li>
-<p>다음 Manifest 권한 획득 표를 참고하여, 필요한 퍼미션을 업데이트합니다.</p>
-<p><a href="https://www.notion.so/06c435a50b8a484c95bde371c7292498">표. Mainfest 권한 획득</a></p>
-</li>
-</ol>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-xml" data-lang="xml"><span style="color:#f92672">&lt;uses-permission</span> <span style="color:#a6e22e">android:name=</span><span style="color:#e6db74">&#34;android.permission.INTERNET&#34;</span> <span style="color:#f92672">/&gt;</span>
-<span style="color:#f92672">&lt;uses-permission</span> <span style="color:#a6e22e">android:name=</span><span style="color:#e6db74">&#34;android.permission.RECORD_AUDIO&#34;</span> <span style="color:#f92672">/&gt;</span>
-<span style="color:#f92672">&lt;uses-permission</span> <span style="color:#a6e22e">android:name=</span><span style="color:#e6db74">&#34;android.permission.READ_CONTACTS&#34;</span> <span style="color:#f92672">/&gt;</span>
-<span style="color:#f92672">&lt;uses-permission</span> <span style="color:#a6e22e">android:name=</span><span style="color:#e6db74">&#34;android.permission.CALL_PHONE&#34;</span><span style="color:#f92672">/&gt;</span>
-</code></pre></div><p><strong>참고</strong></p>
-<ul>
-<li>Manifest에 퍼미션 허용에 대한 상세 내용은 <a href="https://developer.android.com/guide/topics/manifest/uses-permission-element">Google Developers</a> 사이트에서 확인하실 수 있습니다.</li>
-</ul>
-<h2 id="음성-인식-개발-프로세스">
+  <article class="markdown"><h1 id="음성-인식-개발-프로세스">
   음성 인식 개발 프로세스
   <a class="anchor" href="#%ec%9d%8c%ec%84%b1-%ec%9d%b8%ec%8b%9d-%ea%b0%9c%eb%b0%9c-%ed%94%84%eb%a1%9c%ec%84%b8%ec%8a%a4">#</a>
-</h2>
-<h3 id="개발-프로세스">
+</h1>
+<h2 id="개발-프로세스">
   <strong>개발 프로세스</strong>
   <a class="anchor" href="#%ea%b0%9c%eb%b0%9c-%ed%94%84%eb%a1%9c%ec%84%b8%ec%8a%a4">#</a>
-</h3>
+</h2>
 <p>Android Studio 설정을 완료 후, 아래 순서에 따라 Kakao i SDK 연동 개발을 진행합니다.</p>
-<h3 id="사전-작업">
+<h2 id="사전-작업">
   <strong>사전 작업</strong>
   <a class="anchor" href="#%ec%82%ac%ec%a0%84-%ec%9e%91%ec%97%85">#</a>
-</h3>
+</h2>
 <p>음성 인식 개발 프로세스를 정상적으로 수행하기 위해서는 다음의 사전 작업이 필요합니다.</p>
 <ul>
 <li>Kakao SDK 연동</li>
@@ -444,10 +251,10 @@ https://github.com/alex-shpak/hugo-book
 <li><a href="https://developers.kakao.com/">Kakao Developers</a>에 애플리케이션 등록</li>
 <li><a href="https://developers.kakao.com/">Kakao Developers</a>에 애플리케이션을 생성하는 방법은 Kakao i PM에게 문의 부탁드립니다.</li>
 </ul>
-<h3 id="kakao-i-sdk-초기화">
+<h2 id="kakao-i-sdk-초기화">
   Kakao i SDK 초기화
   <a class="anchor" href="#kakao-i-sdk-%ec%b4%88%ea%b8%b0%ed%99%94">#</a>
-</h3>
+</h2>
 <p>Kakao i SDK를 초기화하기 위해서 하기 순서에 따라 <code>Application.onCreate()</code> 메서드에서  <code>KakaoI</code> 클래스에 내장된 메서드들을 체이닝 방식으로 확장합니다.</p>
 <ol>
 <li>
@@ -488,10 +295,10 @@ https://github.com/alex-shpak/hugo-book
 </ul>
 </li>
 </ol>
-<h4 id="예제-코드">
+<h3 id="예제-코드">
   <strong>예제 코드</strong>
   <a class="anchor" href="#%ec%98%88%ec%a0%9c-%ec%bd%94%eb%93%9c">#</a>
-</h4>
+</h3>
 <p>다음은 <code>provideKakaoIAuth()</code>, <code>providePackageInfo()</code>, <code>provideTemplateHandler()</code> 메서드를 사용하여 Kakao i SDK를 초기화한 예시입니다.</p>
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-kotlin" data-lang="kotlin"><span style="color:#66d9ef">override</span> <span style="color:#66d9ef">fun</span> <span style="color:#a6e22e">onCreate</span>() {
    KakaoI.with(applicationContext, <span style="color:#e6db74">&#34;sandbox&#34;</span>)
@@ -524,10 +331,10 @@ https://github.com/alex-shpak/hugo-book
        .init()
 }
 </code></pre></div><p><a href="https://www.notion.so/7459a03038644037a18c2e88a330a1a6"> 표. Kakao i SDK 모듈</a></p>
-<h3 id="헤이카카오-가입">
+<h2 id="헤이카카오-가입">
   헤이카카오 가입
   <a class="anchor" href="#%ed%97%a4%ec%9d%b4%ec%b9%b4%ec%b9%b4%ec%98%a4-%ea%b0%80%ec%9e%85">#</a>
-</h3>
+</h2>
 <p><a href="https://www.notion.so/f16eb5dcc57f48979a8b620e1ef4aac0#87082a4afb4c496cbd454ce481d61c0b">https://www.notion.so/f16eb5dcc57f48979a8b620e1ef4aac0#87082a4afb4c496cbd454ce481d61c0b</a></p>
 <p>Kakao i 음성 인식 서비스를 이용하기 위해서 사용자는 <a href="https://kakao.ai/hey-kakao">헤이카카오 서비스</a>에 가입해야 합니다. Kakao i SDK에는 자체적으로 헤이카카오 서비스 가입 프로세스가 구현되어 있습니다.</p>
 <ul>
@@ -546,10 +353,10 @@ https://github.com/alex-shpak/hugo-book
 </li>
 </ol>
 <p><a href="https://www.notion.so/65ef8251325a41ec83d99078e74f2f44">표. checkAccount 콜백</a></p>
-<h4 id="예제-코드-1">
+<h3 id="예제-코드-1">
   <strong>예제 코드</strong>
   <a class="anchor" href="#%ec%98%88%ec%a0%9c-%ec%bd%94%eb%93%9c-1">#</a>
-</h4>
+</h3>
 <p>다음은 <code>checkAccount()</code> 콜백 메서드를 사용한 예제입니다.</p>
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-kotlin" data-lang="kotlin"><span style="color:#75715e">//유저 상태를 확인하여 다음으로 수행해야할 Intent를 알려주거나 오류 상태를 전달 하는 Callback Interface
 </span><span style="color:#75715e"></span>KakaoI.checkAccount(<span style="color:#66d9ef">object</span> <span style="color:#960050;background-color:#1e0010">: </span><span style="color:#a6e22e">KakaoI</span>.OnCheckCallback {
@@ -586,16 +393,16 @@ https://github.com/alex-shpak/hugo-book
 
    }
 })
-</code></pre></div><h3 id="permission-확인">
+</code></pre></div><h2 id="permission-확인">
   Permission 확인
   <a class="anchor" href="#permission-%ed%99%95%ec%9d%b8">#</a>
-</h3>
+</h2>
 <p>다음의 권한(Runtime Permission)을 Manifest에 추가하여, 사용자가 런타임에 각 권한을 승인하도록 요청합니다. 자세한 설명은 Google Developers 사이트의 <a href="https://developer.android.com/training/permissions/requesting?hl=ko">Android 개발자 &gt; 앱 권한 요청</a>에서 확인할 수 있습니다.</p>
 <p><a href="https://www.notion.so/152fcef17b2247648f70643ce74f6074">표. Runtime Permission</a></p>
-<h3 id="음성-인식-활성화">
+<h2 id="음성-인식-활성화">
   음성 인식 활성화
   <a class="anchor" href="#%ec%9d%8c%ec%84%b1-%ec%9d%b8%ec%8b%9d-%ed%99%9c%ec%84%b1%ed%99%94">#</a>
-</h3>
+</h2>
 <p>Kakao i 음성 인식을 활성화하기 위해 False(Default)로 설정되어 있는 초기값을 <code>KakaoI.setEnabled()</code> 메드를 사용하여 True 값으로 변경합니다.</p>
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-kotlin" data-lang="kotlin">KakaoI.setEnabled(<span style="color:#66d9ef">true</span>)
 </code></pre></div><p><strong>참고</strong></p>
@@ -603,10 +410,10 @@ https://github.com/alex-shpak/hugo-book
 <li>Wake-up word(호출명령어)의 초기 값은 “헤이카카오”로 고정되지만, 최종 사용자는 설정 화면에서 다른 Wake-up word를 설정할 수 있습니다.</li>
 <li>Wake-up word가 유입될 때, 발화 효과음을 재생하는 과정은 Kakao i SDK 내부적으로 수행됩니다.</li>
 </ul>
-<h3 id="클래스-구현">
+<h2 id="클래스-구현">
   클래스 구현
   <a class="anchor" href="#%ed%81%b4%eb%9e%98%ec%8a%a4-%ea%b5%ac%ed%98%84">#</a>
-</h3>
+</h2>
 <p>음성 인식 결과 값을 애플리케이션으로 가져오기 위해서는 각 음성 인식 단계에서 클래스를 구현 및 정의해야 합니다. 각 클래스에 대한 상세 API는 본 가이드의 <a href="https://www.notion.so/API-d3f8f05ce721469b80180e291ed47526">API 레퍼런스</a> ****챕터에서 확인하실 수 있습니다.</p>
 <p><a href="https://www.notion.so/291e451b8c5f424ca814157eeed2fe62">표. 음성 요청 클래스 구현</a></p>
 <p><strong>참고</strong></p>
@@ -632,10 +439,10 @@ https://github.com/alex-shpak/hugo-book
 </ul>
 </li>
 </ol>
-<h4 id="예제-코드-2">
+<h3 id="예제-코드-2">
   예제 코드
   <a class="anchor" href="#%ec%98%88%ec%a0%9c-%ec%bd%94%eb%93%9c-2">#</a>
-</h4>
+</h3>
 <p>음성 인식 클래스 구현 시 필요한 샘플 코드는 다음과 같습니다.</p>
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-kotlin" data-lang="kotlin"><span style="color:#66d9ef">class</span> <span style="color:#a6e22e">RecognizeActivity</span> : Activity {
    <span style="color:#66d9ef">private</span> <span style="color:#66d9ef">var</span> listeningBinder: KakaoIListeningBinder? = <span style="color:#66d9ef">null</span>
@@ -715,10 +522,10 @@ https://github.com/alex-shpak/hugo-book
 </span><span style="color:#75715e"></span>       }
    }
 }
-</code></pre></div><h3 id="음성-인식-결과-화면-출력">
+</code></pre></div><h2 id="음성-인식-결과-화면-출력">
   음성 인식 결과 화면 출력
   <a class="anchor" href="#%ec%9d%8c%ec%84%b1-%ec%9d%b8%ec%8b%9d-%ea%b2%b0%ea%b3%bc-%ed%99%94%eb%a9%b4-%ec%b6%9c%eb%a0%a5">#</a>
-</h3>
+</h2>
 <p>Kakao i SDK에서는 음성 인식 결과를 UI 화면으로 출력할 때, View Template이라는 레이아웃 화면을 사용합니다.
 Kakao i SDK는 기본적인 View Template을 제공하지만, 클라이언트의 특정 서비스에 맞춰서 View Template 수정도 가능합니다. 수정된 View Template 사용 시,  <a href="https://www.notion.so/0b662a19f26547fa8b521dbf745de0d7#908935e94c3f49d2a132d42ef63e71ca">Kakao i SDK 초기화</a>를 수행할 때 <code>[provideTemplateHandler()](https://www.notion.so/9a14363c2a8b47099ba3e7c2b42afc4a?v=5d571b9986ea4f60b5e6845e2710b45d)</code> 메드를 호출해야합니다.</p>
 <p><strong>참고</strong></p>
@@ -726,10 +533,10 @@ Kakao i SDK는 기본적인 View Template을 제공하지만, 클라이언트의
 <li>View Template 수정 시에도  음성 답변은 Kakao i SDK를 통해 재생됩니다.</li>
 <li>View Template 구현에 관한 자세한 내용은 [Kakao i Engine] View Template 가이드를 참고하시기 바랍니다.</li>
 </ul>
-<h3 id="설정-화면-출력">
+<h2 id="설정-화면-출력">
   설정 화면 출력
   <a class="anchor" href="#%ec%84%a4%ec%a0%95-%ed%99%94%eb%a9%b4-%ec%b6%9c%eb%a0%a5">#</a>
-</h3>
+</h2>
 <p><code>KakaoI.startSettingActivity(getContext()</code> 메서드를 호출하여 Kakao i 설정 화면을 최종 사용자에게 출력합니다.</p>
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-kotlin" data-lang="kotlin">* KakaoI.startSettingActivity(getContext(), error -&gt; <span style="color:#75715e">/* Do something on error */</span>)
 </code></pre></div></article>
@@ -766,32 +573,27 @@ Kakao i SDK는 기본적인 View Template을 제공하지만, 클라이언트의
       
   <nav id="TableOfContents">
   <ul>
-    <li><a href="#시작하기">시작하기</a>
+    <li><a href="#개발-프로세스"><strong>개발 프로세스</strong></a></li>
+    <li><a href="#사전-작업"><strong>사전 작업</strong></a></li>
+    <li><a href="#kakao-i-sdk-초기화">Kakao i SDK 초기화</a>
       <ul>
-        <li><a href="#kakao-i-sdk-구성-요소">Kakao i SDK 구성 요소</a></li>
+        <li><a href="#예제-코드"><strong>예제 코드</strong></a></li>
       </ul>
     </li>
-    <li><a href="#인터랙션-시나리오">인터랙션 시나리오</a></li>
-    <li><a href="#android-studio-설정">Android Studio 설정</a>
+    <li><a href="#헤이카카오-가입">헤이카카오 가입</a>
       <ul>
-        <li><a href="#프로젝트에서-sdk-사용">프로젝트에서 SDK 사용</a></li>
-        <li><a href="#gradle-설정">Gradle 설정</a></li>
-        <li><a href="#manifest-설정">Manifest 설정</a></li>
+        <li><a href="#예제-코드-1"><strong>예제 코드</strong></a></li>
       </ul>
     </li>
-    <li><a href="#음성-인식-개발-프로세스">음성 인식 개발 프로세스</a>
+    <li><a href="#permission-확인">Permission 확인</a></li>
+    <li><a href="#음성-인식-활성화">음성 인식 활성화</a></li>
+    <li><a href="#클래스-구현">클래스 구현</a>
       <ul>
-        <li><a href="#개발-프로세스"><strong>개발 프로세스</strong></a></li>
-        <li><a href="#사전-작업"><strong>사전 작업</strong></a></li>
-        <li><a href="#kakao-i-sdk-초기화">Kakao i SDK 초기화</a></li>
-        <li><a href="#헤이카카오-가입">헤이카카오 가입</a></li>
-        <li><a href="#permission-확인">Permission 확인</a></li>
-        <li><a href="#음성-인식-활성화">음성 인식 활성화</a></li>
-        <li><a href="#클래스-구현">클래스 구현</a></li>
-        <li><a href="#음성-인식-결과-화면-출력">음성 인식 결과 화면 출력</a></li>
-        <li><a href="#설정-화면-출력">설정 화면 출력</a></li>
+        <li><a href="#예제-코드-2">예제 코드</a></li>
       </ul>
     </li>
+    <li><a href="#음성-인식-결과-화면-출력">음성 인식 결과 화면 출력</a></li>
+    <li><a href="#설정-화면-출력">설정 화면 출력</a></li>
   </ul>
 </nav>
 
