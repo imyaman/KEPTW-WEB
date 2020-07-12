@@ -19,11 +19,7 @@
   </url>
   
   <url>
-    <loc>http://example.org/kakao_work/web-api-ref/</loc>
-  </url>
-  
-  <url>
-    <loc>http://example.org/kakao_work/bot-stepbystep/</loc>
+    <loc>http://example.org/kakao_i/sdk_for_wallpad_kor/startup/</loc>
   </url>
   
   <url>
@@ -31,7 +27,11 @@
   </url>
   
   <url>
-    <loc>http://example.org/kakao_i/sdk_for_wallpad_kor/startup/</loc>
+    <loc>http://example.org/kakao_work/web-api-ref/</loc>
+  </url>
+  
+  <url>
+    <loc>http://example.org/kakao_work/bot-stepbystep/</loc>
   </url>
   
   <url>
@@ -48,6 +48,10 @@
   
   <url>
     <loc>http://example.org/</loc>
+  </url>
+  
+  <url>
+    <loc>http://example.org/tags/kakao_i/</loc>
   </url>
   
   <url>

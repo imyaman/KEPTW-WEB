@@ -22,6 +22,30 @@
     </item>
     
     <item>
+      <title>시작하기</title>
+      <link>http://example.org/kakao_i/sdk_for_wallpad_kor/startup/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://example.org/kakao_i/sdk_for_wallpad_kor/startup/</guid>
+      <description>시작하기 #  이 문서는 Wallpad 디바이스에서 Kakao i 음성 인식 서비스를 사용하기 위하여 Kakao i SDK for Wallpad를 이용한 개발 가이드로서, 고객사의 개발자를 대상으로 작성되었습니다.
+Kakao i SDK for Wallpad는 기본적으로 사용자의 음성 명령을 입력받고, 명령어를 분석하여 사용자 요청에 맞는 응답(음성 또는 UI)을 출력하는 기능을 제공합니다.
+참고
+ 이 문서는 Kakao i Android SDK Version 1.2.4.18를 기반으로 작성되었으며, Android API 21을 필요로 합니다.  Kakao i SDK 구성 요소 #  Kakao i SDK for Wallpad의 구성 요소는 다음과 같습니다.</description>
+    </item>
+    
+    <item>
+      <title>Android Studio 설정</title>
+      <link>http://example.org/kakao_i/sdk_for_wallpad_kor/android_studio_setting/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://example.org/kakao_i/sdk_for_wallpad_kor/android_studio_setting/</guid>
+      <description>Android Studio 설정 #  프로젝트에서 SDK 사용 #  프로젝트에서 Kakao i SDK를 사용하기 위해서 다음 순서에 따라 Kakao i SDK를 빌드 의존성으로 추가한 후 불러오기를 진행합니다
+Gradle 설정 #    Android Studio | New Project로 이동하여 ****신규 프로젝트를 생성합니다
+  build.gradle로 이동하여 minSdkVersion 레벨을 21, JavaVersion을 8로 설정 후, 애플리케이션의 패키지 이름을 applicationId로 지정합니다.
+android { defaultConfig { ... minSdkVersion 21 //Android SDK API 레벨을 21로 설정 applicationId &amp;quot;서버에 등록된 패키지명&amp;quot; } compileOptions { //Java 컴파일러 타겟을 Java8로 설정 sourceCompatibility JavaVersion.</description>
+    </item>
+    
+    <item>
       <title>Web API 레퍼런스</title>
       <link>http://example.org/kakao_work/web-api-ref/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -44,31 +68,7 @@ Bot 인증 #  Bot 등록 과정에서 전달받은 인증토큰(Access Token)을
     </item>
     
     <item>
-      <title></title>
-      <link>http://example.org/kakao_i/sdk_for_wallpad_kor/android_studio_setting/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>http://example.org/kakao_i/sdk_for_wallpad_kor/android_studio_setting/</guid>
-      <description>Android Studio 설정 #  프로젝트에서 SDK 사용 #  프로젝트에서 Kakao i SDK를 사용하기 위해서 다음 순서에 따라 Kakao i SDK를 빌드 의존성으로 추가한 후 불러오기를 진행합니다
-Gradle 설정 #    Android Studio | New Project로 이동하여 ****신규 프로젝트를 생성합니다
-  build.gradle로 이동하여 minSdkVersion 레벨을 21, JavaVersion을 8로 설정 후, 애플리케이션의 패키지 이름을 applicationId로 지정합니다.
-android { defaultConfig { ... minSdkVersion 21 //Android SDK API 레벨을 21로 설정 applicationId &amp;quot;서버에 등록된 패키지명&amp;quot; } compileOptions { //Java 컴파일러 타겟을 Java8로 설정 sourceCompatibility JavaVersion.</description>
-    </item>
-    
-    <item>
-      <title></title>
-      <link>http://example.org/kakao_i/sdk_for_wallpad_kor/startup/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>http://example.org/kakao_i/sdk_for_wallpad_kor/startup/</guid>
-      <description>시작하기 #  이 문서는 Wallpad 디바이스에서 Kakao i 음성 인식 서비스를 사용하기 위하여 Kakao i SDK for Wallpad를 이용한 개발 가이드로서, 고객사의 개발자를 대상으로 작성되었습니다.
-Kakao i SDK for Wallpad는 기본적으로 사용자의 음성 명령을 입력받고, 명령어를 분석하여 사용자 요청에 맞는 응답(음성 또는 UI)을 출력하는 기능을 제공합니다.
-참고
- 이 문서는 Kakao i Android SDK Version 1.2.4.18를 기반으로 작성되었으며, Android API 21을 필요로 합니다.  Kakao i SDK 구성 요소 #  Kakao i SDK for Wallpad의 구성 요소는 다음과 같습니다.</description>
-    </item>
-    
-    <item>
-      <title></title>
+      <title>음성 인식 개발 프로세스</title>
       <link>http://example.org/kakao_i/sdk_for_wallpad_kor/stt_dev_process/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
