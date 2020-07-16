@@ -23,6 +23,10 @@
   </url>
   
   <url>
+    <loc>http://example.org/publishing/directory_s/</loc>
+  </url>
+  
+  <url>
     <loc>http://example.org/kakao_i/sdk_for_wallpad_kor/android_studio_setting/</loc>
   </url>
   
@@ -60,6 +64,14 @@
   
   <url>
     <loc>http://example.org/tags/kakao_work/</loc>
+  </url>
+  
+  <url>
+    <loc>http://example.org/tags/publishing/</loc>
+  </url>
+  
+  <url>
+    <loc>http://example.org/publishing/</loc>
   </url>
   
   <url>

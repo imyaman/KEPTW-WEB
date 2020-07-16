@@ -28,5 +28,14 @@
       <description></description>
     </item>
     
+    <item>
+      <title>publishing</title>
+      <link>http://example.org/tags/publishing/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://example.org/tags/publishing/</guid>
+      <description></description>
+    </item>
+    
   </channel>
 </rss>

@@ -34,6 +34,15 @@ Kakao i SDK for Wallpad는 기본적으로 사용자의 음성 명령을 입력�
     </item>
     
     <item>
+      <title>010101_디렉토리s 확인</title>
+      <link>http://example.org/publishing/directory_s/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://example.org/publishing/directory_s/</guid>
+      <description>디렉토리s 확인 #  </description>
+    </item>
+    
+    <item>
       <title>Android Studio 설정</title>
       <link>http://example.org/kakao_i/sdk_for_wallpad_kor/android_studio_setting/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
