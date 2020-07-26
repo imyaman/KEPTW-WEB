@@ -3,11 +3,19 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>https://keptw.saramara.ai/kakao_i/apiref/</loc>
+  </url>
+  
+  <url>
     <loc>https://keptw.saramara.ai/kakao_i/</loc>
   </url>
   
   <url>
     <loc>https://keptw.saramara.ai/kakao_work/messageblock/</loc>
+  </url>
+  
+  <url>
+    <loc>https://keptw.saramara.ai/kakao_i/sdk/</loc>
   </url>
   
   <url>
