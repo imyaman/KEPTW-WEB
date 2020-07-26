@@ -7,10 +7,6 @@
   </url>
   
   <url>
-    <loc>https://keptw.saramara.ai/kakao_work/</loc>
-  </url>
-  
-  <url>
     <loc>https://keptw.saramara.ai/kakao_work/messageblock/</loc>
   </url>
   
@@ -44,6 +40,10 @@
   
   <url>
     <loc>https://keptw.saramara.ai/kakao_work/web-api-ref/</loc>
+  </url>
+  
+  <url>
+    <loc>https://keptw.saramara.ai/kakao_work/</loc>
   </url>
   
   <url>
