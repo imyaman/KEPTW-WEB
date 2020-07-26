@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>기타 on 노웨어</title>
+    <link>https://keptw.saramara.ai/tags/%EA%B8%B0%ED%83%80/</link>
+    <description>Recent content in 기타 on 노웨어</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>ko-kr</language>
+    <copyright>Kakao Enterprise Corp.</copyright>
+    
+	<atom:link href="https://keptw.saramara.ai/tags/%EA%B8%B0%ED%83%80/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>기타(sandbox)</title>
+      <link>https://keptw.saramara.ai/publishing/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://keptw.saramara.ai/publishing/</guid>
+      <description>소개 #  연습을 위한 공간입니다. 이 디렉토리의 문서는 언제든 삭제될 수 있습니다.</description>
+    </item>
+    
+  </channel>
+</rss>
