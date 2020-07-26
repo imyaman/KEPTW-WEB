@@ -11,10 +11,6 @@
   </url>
   
   <url>
-    <loc>https://keptw.saramara.ai/kakao_i_connect/</loc>
-  </url>
-  
-  <url>
     <loc>https://keptw.saramara.ai/kakao_work/</loc>
   </url>
   
@@ -52,6 +48,10 @@
   
   <url>
     <loc>https://keptw.saramara.ai/kakao_i/sdk_for_wallpad_kor/stt_dev_process/</loc>
+  </url>
+  
+  <url>
+    <loc>https://keptw.saramara.ai/kakao_i_connect/</loc>
   </url>
   
   <url>
