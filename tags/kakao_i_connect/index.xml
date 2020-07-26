@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>kakao_i_connect on 노웨어</title>
+    <link>https://keptw.saramara.ai/tags/kakao_i_connect/</link>
+    <description>Recent content in kakao_i_connect on 노웨어</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>ko-kr</language>
+    <copyright>Kakao Enterprise Corp.</copyright>
+    
+	<atom:link href="https://keptw.saramara.ai/tags/kakao_i_connect/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Kakao i Connect</title>
+      <link>https://keptw.saramara.ai/kakao_i_connect/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://keptw.saramara.ai/kakao_i_connect/</guid>
+      <description>소개 #  Kakao i Connect의 한글 표기는 카카오 i 커넥트 입니다. 표기에 주의해주십시오.</description>
+    </item>
+    
+  </channel>
+</rss>
