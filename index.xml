@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>기술문서 홈 - 카카오 엔터프라이즈 on 노웨어</title>
+    <title>노웨어</title>
     <link>https://keptw.saramara.ai/</link>
-    <description>Recent content in 기술문서 홈 - 카카오 엔터프라이즈 on 노웨어</description>
+    <description>Recent content on 노웨어</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ko-kr</language>
     <copyright>Kakao Enterprise Corp.</copyright>
@@ -98,6 +98,16 @@ https://cbt-kw-api.kkep.io/v1/*{API 종류}.{API 이름}*  API 종류: 각 API�
 Kakao i SDK for Wallpad는 기본적으로 사용자의 음성 명령을 입력받고, 명령어를 분석하여 사용자 요청에 맞는 응답(음성 또는 UI)을 출력하는 기능을 제공합니다.
 참고
  이 문서는 Kakao i Android SDK Version 1.2.4.18를 기반으로 작성되었으며, Android API 21을 필요로 합니다.  Kakao i SDK 구성 요소 #  Kakao i SDK for Wallpad의 구성 요소는 다음과 같습니다.</description>
+    </item>
+    
+    <item>
+      <title>기술문서 홈 - 카카오 엔터프라이즈</title>
+      <link>https://keptw.saramara.ai/index.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://keptw.saramara.ai/index.html</guid>
+      <description>{Knowhere}는 개발자 및 IT 전문가를 위한 카카오 엔터프라이즈 기술문서의 홈입니다. 튜토리얼, API 레퍼런스, 코드 예시를 확인하십시오.
+아래에 상품들을 나열합니다.</description>
     </item>
     
   </channel>

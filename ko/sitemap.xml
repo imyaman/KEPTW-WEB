@@ -123,6 +123,14 @@
   </url>
   
   <url>
+    <loc>https://keptw.saramara.ai/index.html</loc>
+  </url>
+  
+  <url>
+    <loc>https://keptw.saramara.ai/tags/%EA%B8%B0%ED%83%80/</loc>
+  </url>
+  
+  <url>
     <loc>https://keptw.saramara.ai/</loc>
     <xhtml:link
                 rel="alternate"
@@ -134,10 +142,6 @@
                 hreflang="ko"
                 href="https://keptw.saramara.ai/"
                 />
-  </url>
-  
-  <url>
-    <loc>https://keptw.saramara.ai/tags/%EA%B8%B0%ED%83%80/</loc>
   </url>
   
 </urlset>
