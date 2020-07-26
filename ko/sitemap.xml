@@ -11,7 +11,11 @@
   </url>
   
   <url>
-    <loc>https://keptw.saramara.ai/kakao_work/messageblock/</loc>
+    <loc>https://keptw.saramara.ai/kakao_work/1.0/messageblock/</loc>
+  </url>
+  
+  <url>
+    <loc>https://keptw.saramara.ai/kakao_work/current/messageblock/</loc>
   </url>
   
   <url>
@@ -23,7 +27,11 @@
   </url>
   
   <url>
-    <loc>https://keptw.saramara.ai/kakao_work/bot-stepbystep/</loc>
+    <loc>https://keptw.saramara.ai/kakao_work/1.0/bot-stepbystep/</loc>
+  </url>
+  
+  <url>
+    <loc>https://keptw.saramara.ai/kakao_work/current/bot-stepbystep/</loc>
   </url>
   
   <url>
@@ -47,7 +55,11 @@
   </url>
   
   <url>
-    <loc>https://keptw.saramara.ai/kakao_work/web-api-ref/</loc>
+    <loc>https://keptw.saramara.ai/kakao_work/1.0/web-api-ref/</loc>
+  </url>
+  
+  <url>
+    <loc>https://keptw.saramara.ai/kakao_work/current/web-api-ref/</loc>
   </url>
   
   <url>

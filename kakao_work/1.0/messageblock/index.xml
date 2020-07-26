@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Message Block on 노웨어</title>
+    <link>https://keptw.saramara.ai/kakao_work/1.0/messageblock/</link>
+    <description>Recent content in Message Block on 노웨어</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>ko-kr</language>
+    <copyright>Kakao Enterprise Corp.</copyright>
+    
+	<atom:link href="https://keptw.saramara.ai/kakao_work/1.0/messageblock/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+  </channel>
+</rss>
