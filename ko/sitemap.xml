@@ -61,20 +61,6 @@
   </url>
   
   <url>
-    <loc>https://keptw.saramara.ai/</loc>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://keptw.saramara.ai/en/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="ko"
-                href="https://keptw.saramara.ai/"
-                />
-  </url>
-  
-  <url>
     <loc>https://keptw.saramara.ai/tags/kakao_i/</loc>
   </url>
   
@@ -109,6 +95,20 @@
                 rel="alternate"
                 hreflang="ko"
                 href="https://keptw.saramara.ai/tags/"
+                />
+  </url>
+  
+  <url>
+    <loc>https://keptw.saramara.ai/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://keptw.saramara.ai/en/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="ko"
+                href="https://keptw.saramara.ai/"
                 />
   </url>
   
