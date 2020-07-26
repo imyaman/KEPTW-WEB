@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Categories on 노웨어</title>
-    <link>https://keptw.saramara.ai/categories/</link>
-    <description>Recent content in Categories on 노웨어</description>
+    <title>Tags on Knowhere</title>
+    <link>https://keptw.saramara.ai/en/tags/</link>
+    <description>Recent content in Tags on Knowhere</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ko-kr</language>
     <copyright>Kakao Enterprise Corp.</copyright>
     
-	<atom:link href="https://keptw.saramara.ai/categories/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://keptw.saramara.ai/en/tags/index.xml" rel="self" type="application/rss+xml" />
     
     
   </channel>

@@ -1,21 +1,22 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Kakao_is on My New Hugo Site</title>
-    <link>http://example.org/kakao_i/</link>
-    <description>Recent content in Kakao_is on My New Hugo Site</description>
+    <title>Kakao_is on 노웨어</title>
+    <link>https://keptw.saramara.ai/kakao_i/</link>
+    <description>Recent content in Kakao_is on 노웨어</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language>
+    <language>ko-kr</language>
+    <copyright>Kakao Enterprise Corp.</copyright>
     
-	<atom:link href="http://example.org/kakao_i/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://keptw.saramara.ai/kakao_i/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title></title>
-      <link>http://example.org/kakao_i/sdk_for_wallpad_kor_v1.0.0/</link>
+      <link>https://keptw.saramara.ai/kakao_i/sdk_for_wallpad_kor_v1.0.0/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://example.org/kakao_i/sdk_for_wallpad_kor_v1.0.0/</guid>
+      <guid>https://keptw.saramara.ai/kakao_i/sdk_for_wallpad_kor_v1.0.0/</guid>
       <description>SDK for Wallpad_KOR_v.1.0 #  빨리 시작하기 #  이 문서는 Wallpad 디바이스에서 Kakao i 음성 인식 서비스를 사용하기 위하여 Kakao i SDK for Wallpad를 이용한 개발 가이드로서, 고객사의 개발자를 대상으로 작성되었습니다.
 Kakao i SDK for Wallpad는 기본적으로 사용자의 음성 명령을 입력받고, 명령어를 분석하여 사용자 요청에 맞는 응답(음성 또는 UI)을 출력하는 기능을 제공합니다.
 참고

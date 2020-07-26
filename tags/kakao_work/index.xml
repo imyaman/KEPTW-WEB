@@ -1,21 +1,22 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>kakao_work on My New Hugo Site</title>
-    <link>http://example.org/tags/kakao_work/</link>
-    <description>Recent content in kakao_work on My New Hugo Site</description>
+    <title>kakao_work on 노웨어</title>
+    <link>https://keptw.saramara.ai/tags/kakao_work/</link>
+    <description>Recent content in kakao_work on 노웨어</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language>
+    <language>ko-kr</language>
+    <copyright>Kakao Enterprise Corp.</copyright>
     
-	<atom:link href="http://example.org/tags/kakao_work/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://keptw.saramara.ai/tags/kakao_work/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Kakao Work</title>
-      <link>http://example.org/kakao_work/</link>
+      <link>https://keptw.saramara.ai/kakao_work/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://example.org/kakao_work/</guid>
+      <guid>https://keptw.saramara.ai/kakao_work/</guid>
       <description>Kakao Work #  소개 #  Kakao Work의 한글 표기는 카카오 워크 입니다. 표기에 주의해주십시오.
 이 섹션이 다룰 내용 #  Block Kit 구성 및 정책
 Web API 레퍼런스
@@ -26,10 +27,10 @@ Lorem markdownum, a quoque nutu est quodcumque mandasset veluti. Passim inportun
     
     <item>
       <title>시작하기</title>
-      <link>http://example.org/kakao_work/block-kit-1/intro/</link>
+      <link>https://keptw.saramara.ai/kakao_work/block-kit-1/intro/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://example.org/kakao_work/block-kit-1/intro/</guid>
+      <guid>https://keptw.saramara.ai/kakao_work/block-kit-1/intro/</guid>
       <description>시작하기 #  Block Kit 시작하기 #  Block Kit(블록 킷)은 카카오워크에서 단순하지만 강력한 인터랙션을 사용자가 경험할 수 있도록 제공하는 UI 프레임워크를 말합니다. 이 블록들을 1개부터 n개까지 쌓아올려 만든 말풍선을 조합형 말풍선이라고 정의하며, 다양한 블록들을 조합함으로써 좀 더 효과적으로 서비스별 Bot 특성에 맞춰 메시지를 커스터마이징 할 수 있습니다.
 블록 #  카카오워크 Block Kit 속성
 블록(Block)은 메시지를 구성하는 기본 단위이며, 모든 블록 타입은 1개 이상의 역할을 가지고 있습니다. 엘리먼트(Element)는 블록 타입에 따라 다른 블록과 조합될 수 있는 블록을 의미합니다.</description>
@@ -37,10 +38,10 @@ Lorem markdownum, a quoque nutu est quodcumque mandasset veluti. Passim inportun
     
     <item>
       <title>Block Kit 구성 및 정책</title>
-      <link>http://example.org/kakao_work/block-kit-1/</link>
+      <link>https://keptw.saramara.ai/kakao_work/block-kit-1/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://example.org/kakao_work/block-kit-1/</guid>
+      <guid>https://keptw.saramara.ai/kakao_work/block-kit-1/</guid>
       <description>Appendix A. 조합형 말풍선 예시 #  Block Kit 구성 및 정책
 A-1. Welcome 메시지 #   아래 예시는 카카오워크의 업무 도구 중 구글 캘린더 Bot을 사용자가 연결했을 때, 구글 캘린더 Bot과의 1:1 채팅방에 자동으로 전송되는 Welcome(웰컴) 메시지입니다.
 https://lh5.googleusercontent.com/2eY2wvS6uD9Jh4J1LFmXqATpNR9w_kWDaxItz8f4EsVK3iH-ESdCYKT6XJ7PTKzclW73Of7x1-XqnLsC9K3DWig3PQOE96e_FDclILf_N6MLtQQ0h0VmJdMlQlut09doSPJZGvhy
@@ -50,10 +51,10 @@ https://lh5.googleusercontent.com/2eY2wvS6uD9Jh4J1LFmXqATpNR9w_kWDaxItz8f4EsVK3i
     
     <item>
       <title>Web API 레퍼런스</title>
-      <link>http://example.org/kakao_work/web-api-ref/</link>
+      <link>https://keptw.saramara.ai/kakao_work/web-api-ref/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://example.org/kakao_work/web-api-ref/</guid>
+      <guid>https://keptw.saramara.ai/kakao_work/web-api-ref/</guid>
       <description>Web API 레퍼런스 #  시작하기 #   카카오워크(Kakao Work)는 HTTP Remote Procedure Call(이하 RPC) 스타일의 API를 제공합니다. HTTP RPC 스타일은 리소스 중심의 REST API와는 달리, 종류별로 그룹 지어진 기능들을 URL로 표현하여 API를 구분합니다.
 카카오워크 Web API의 URL은 다음과 같은 형식을 따릅니다.
 https://cbt-kw-api.kkep.io/v1/*{API 종류}.{API 이름}*  API 종류: 각 API는 기능 영역별로 분류되어 제공됩니다. 예를 들어 사용자 정보를 다루는 API들은 Users 분류로 묶여 제공되고, 채팅방을 다루는 API는 Conversations, 메시지를 다루는 API는 Messages 분류로 묶여 제공됩니다.</description>
@@ -61,10 +62,10 @@ https://cbt-kw-api.kkep.io/v1/*{API 종류}.{API 이름}*  API 종류: 각 API�
     
     <item>
       <title>Bot 시작 가이드</title>
-      <link>http://example.org/kakao_work/bot-stepbystep/</link>
+      <link>https://keptw.saramara.ai/kakao_work/bot-stepbystep/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://example.org/kakao_work/bot-stepbystep/</guid>
+      <guid>https://keptw.saramara.ai/kakao_work/bot-stepbystep/</guid>
       <description>Bot 시작 가이드 #  Bot 생성 및 등록 #  고객사는 카카오워크 확장플랫폼에 등록된 서비스를 바로 이용할 수 있지만, 직접 Bot 애플리케이션을 개발하고 등록하는 것도 가능합니다.
 카카오워크의 확장플랫폼에 Bot을 등록하려면 아래 테이블을 참고하여 필수 정보를 작성하고, 하나의 파일로 압축하여 카카오워크 담당자 이메일(kakaowork_platform@kakaoenterprise.com)로 발송해야 합니다. 모든 데이터가 정상적으로 등록되면 카카오워크 담당자는 영업일 기준 3일 이내, API 호출에 필요한 Access Token을 이메일로 회신합니다.
 Bot 인증 #  Bot 등록 과정에서 전달받은 인증토큰(Access Token)을 HTTP 요청(Request)의 Authorization 헤더를 통해 전달하여 어떤 Bot에서 받은 요청인지 인증 및 권한을 검사해야 합니다.</description>

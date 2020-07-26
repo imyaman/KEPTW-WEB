@@ -1,21 +1,22 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>kakao_i on My New Hugo Site</title>
-    <link>http://example.org/tags/kakao_i/</link>
-    <description>Recent content in kakao_i on My New Hugo Site</description>
+    <title>kakao_i on 노웨어</title>
+    <link>https://keptw.saramara.ai/tags/kakao_i/</link>
+    <description>Recent content in kakao_i on 노웨어</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language>
+    <language>ko-kr</language>
+    <copyright>Kakao Enterprise Corp.</copyright>
     
-	<atom:link href="http://example.org/tags/kakao_i/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://keptw.saramara.ai/tags/kakao_i/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>시작하기</title>
-      <link>http://example.org/kakao_i/sdk_for_wallpad_kor/startup/</link>
+      <link>https://keptw.saramara.ai/kakao_i/sdk_for_wallpad_kor/startup/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://example.org/kakao_i/sdk_for_wallpad_kor/startup/</guid>
+      <guid>https://keptw.saramara.ai/kakao_i/sdk_for_wallpad_kor/startup/</guid>
       <description>시작하기 #  이 문서는 Wallpad 디바이스에서 Kakao i 음성 인식 서비스를 사용하기 위하여 Kakao i SDK for Wallpad를 이용한 개발 가이드로서, 고객사의 개발자를 대상으로 작성되었습니다.
 Kakao i SDK for Wallpad는 기본적으로 사용자의 음성 명령을 입력받고, 명령어를 분석하여 사용자 요청에 맞는 응답(음성 또는 UI)을 출력하는 기능을 제공합니다.
 참고
@@ -24,10 +25,10 @@ Kakao i SDK for Wallpad는 기본적으로 사용자의 음성 명령을 입력�
     
     <item>
       <title>Android Studio 설정</title>
-      <link>http://example.org/kakao_i/sdk_for_wallpad_kor/android_studio_setting/</link>
+      <link>https://keptw.saramara.ai/kakao_i/sdk_for_wallpad_kor/android_studio_setting/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://example.org/kakao_i/sdk_for_wallpad_kor/android_studio_setting/</guid>
+      <guid>https://keptw.saramara.ai/kakao_i/sdk_for_wallpad_kor/android_studio_setting/</guid>
       <description>Android Studio 설정 #  프로젝트에서 SDK 사용 #  프로젝트에서 Kakao i SDK를 사용하기 위해서 다음 순서에 따라 Kakao i SDK를 빌드 의존성으로 추가한 후 불러오기를 진행합니다
 Gradle 설정 #    Android Studio | New Project로 이동하여 ****신규 프로젝트를 생성합니다
   build.gradle로 이동하여 minSdkVersion 레벨을 21, JavaVersion을 8로 설정 후, 애플리케이션의 패키지 이름을 applicationId로 지정합니다.
@@ -36,10 +37,10 @@ android { defaultConfig { ... minSdkVersion 21 //Android SDK API 레벨을 21로
     
     <item>
       <title>음성 인식 개발 프로세스</title>
-      <link>http://example.org/kakao_i/sdk_for_wallpad_kor/stt_dev_process/</link>
+      <link>https://keptw.saramara.ai/kakao_i/sdk_for_wallpad_kor/stt_dev_process/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://example.org/kakao_i/sdk_for_wallpad_kor/stt_dev_process/</guid>
+      <guid>https://keptw.saramara.ai/kakao_i/sdk_for_wallpad_kor/stt_dev_process/</guid>
       <description>음성 인식 개발 프로세스 #  개발 프로세스 #  Android Studio 설정을 완료 후, 아래 순서에 따라 Kakao i SDK 연동 개발을 진행합니다. (수정1)
 사전 작업 #  음성 인식 개발 프로세스를 정상적으로 수행하기 위해서는 다음의 사전 작업이 필요합니다.
  Kakao SDK 연동 프로젝트에 Kakao SDK가 연동되어있지 않은 경우, Kakao Developers 사이트의 Kakao SDK v2 사용법에 따라 연동 작업을 진행합니다. Kakao Developers에 애플리케이션 등록 Kakao Developers에 애플리케이션을 생성하는 방법은 Kakao i PM에게 문의 부탁드립니다.</description>

@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+  xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  
+  <url>
+    <loc>https://keptw.saramara.ai/en/categories/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="ko"
+                href="https://keptw.saramara.ai/categories/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://keptw.saramara.ai/en/categories/"
+                />
+  </url>
+  
+  <url>
+    <loc>https://keptw.saramara.ai/en/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="ko"
+                href="https://keptw.saramara.ai/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://keptw.saramara.ai/en/"
+                />
+  </url>
+  
+  <url>
+    <loc>https://keptw.saramara.ai/en/tags/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="ko"
+                href="https://keptw.saramara.ai/tags/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://keptw.saramara.ai/en/tags/"
+                />
+  </url>
+  
+</urlset>

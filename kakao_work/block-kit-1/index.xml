@@ -1,21 +1,22 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Block Kit 구성 및 정책 on My New Hugo Site</title>
-    <link>http://example.org/kakao_work/block-kit-1/</link>
-    <description>Recent content in Block Kit 구성 및 정책 on My New Hugo Site</description>
+    <title>Block Kit 구성 및 정책 on 노웨어</title>
+    <link>https://keptw.saramara.ai/kakao_work/block-kit-1/</link>
+    <description>Recent content in Block Kit 구성 및 정책 on 노웨어</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language>
+    <language>ko-kr</language>
+    <copyright>Kakao Enterprise Corp.</copyright>
     
-	<atom:link href="http://example.org/kakao_work/block-kit-1/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://keptw.saramara.ai/kakao_work/block-kit-1/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>시작하기</title>
-      <link>http://example.org/kakao_work/block-kit-1/intro/</link>
+      <link>https://keptw.saramara.ai/kakao_work/block-kit-1/intro/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://example.org/kakao_work/block-kit-1/intro/</guid>
+      <guid>https://keptw.saramara.ai/kakao_work/block-kit-1/intro/</guid>
       <description>시작하기 #  Block Kit 시작하기 #  Block Kit(블록 킷)은 카카오워크에서 단순하지만 강력한 인터랙션을 사용자가 경험할 수 있도록 제공하는 UI 프레임워크를 말합니다. 이 블록들을 1개부터 n개까지 쌓아올려 만든 말풍선을 조합형 말풍선이라고 정의하며, 다양한 블록들을 조합함으로써 좀 더 효과적으로 서비스별 Bot 특성에 맞춰 메시지를 커스터마이징 할 수 있습니다.
 블록 #  카카오워크 Block Kit 속성
 블록(Block)은 메시지를 구성하는 기본 단위이며, 모든 블록 타입은 1개 이상의 역할을 가지고 있습니다. 엘리먼트(Element)는 블록 타입에 따라 다른 블록과 조합될 수 있는 블록을 의미합니다.</description>

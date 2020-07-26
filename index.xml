@@ -1,21 +1,22 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Introduction on My New Hugo Site</title>
-    <link>http://example.org/</link>
-    <description>Recent content in Introduction on My New Hugo Site</description>
+    <title>Introduction on 노웨어</title>
+    <link>https://keptw.saramara.ai/</link>
+    <description>Recent content in Introduction on 노웨어</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language>
+    <language>ko-kr</language>
+    <copyright>Kakao Enterprise Corp.</copyright>
     
-	<atom:link href="http://example.org/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://keptw.saramara.ai/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>시작하기</title>
-      <link>http://example.org/kakao_work/block-kit-1/intro/</link>
+      <link>https://keptw.saramara.ai/kakao_work/block-kit-1/intro/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://example.org/kakao_work/block-kit-1/intro/</guid>
+      <guid>https://keptw.saramara.ai/kakao_work/block-kit-1/intro/</guid>
       <description>시작하기 #  Block Kit 시작하기 #  Block Kit(블록 킷)은 카카오워크에서 단순하지만 강력한 인터랙션을 사용자가 경험할 수 있도록 제공하는 UI 프레임워크를 말합니다. 이 블록들을 1개부터 n개까지 쌓아올려 만든 말풍선을 조합형 말풍선이라고 정의하며, 다양한 블록들을 조합함으로써 좀 더 효과적으로 서비스별 Bot 특성에 맞춰 메시지를 커스터마이징 할 수 있습니다.
 블록 #  카카오워크 Block Kit 속성
 블록(Block)은 메시지를 구성하는 기본 단위이며, 모든 블록 타입은 1개 이상의 역할을 가지고 있습니다. 엘리먼트(Element)는 블록 타입에 따라 다른 블록과 조합될 수 있는 블록을 의미합니다.</description>
@@ -23,10 +24,10 @@
     
     <item>
       <title>시작하기</title>
-      <link>http://example.org/kakao_i/sdk_for_wallpad_kor/startup/</link>
+      <link>https://keptw.saramara.ai/kakao_i/sdk_for_wallpad_kor/startup/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://example.org/kakao_i/sdk_for_wallpad_kor/startup/</guid>
+      <guid>https://keptw.saramara.ai/kakao_i/sdk_for_wallpad_kor/startup/</guid>
       <description>시작하기 #  이 문서는 Wallpad 디바이스에서 Kakao i 음성 인식 서비스를 사용하기 위하여 Kakao i SDK for Wallpad를 이용한 개발 가이드로서, 고객사의 개발자를 대상으로 작성되었습니다.
 Kakao i SDK for Wallpad는 기본적으로 사용자의 음성 명령을 입력받고, 명령어를 분석하여 사용자 요청에 맞는 응답(음성 또는 UI)을 출력하는 기능을 제공합니다.
 참고
@@ -35,19 +36,19 @@ Kakao i SDK for Wallpad는 기본적으로 사용자의 음성 명령을 입력�
     
     <item>
       <title>010101_디렉토리s 확인</title>
-      <link>http://example.org/publishing/directory_s/</link>
+      <link>https://keptw.saramara.ai/publishing/directory_s/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://example.org/publishing/directory_s/</guid>
+      <guid>https://keptw.saramara.ai/publishing/directory_s/</guid>
       <description>디렉토리s 확인 #  </description>
     </item>
     
     <item>
       <title>Android Studio 설정</title>
-      <link>http://example.org/kakao_i/sdk_for_wallpad_kor/android_studio_setting/</link>
+      <link>https://keptw.saramara.ai/kakao_i/sdk_for_wallpad_kor/android_studio_setting/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://example.org/kakao_i/sdk_for_wallpad_kor/android_studio_setting/</guid>
+      <guid>https://keptw.saramara.ai/kakao_i/sdk_for_wallpad_kor/android_studio_setting/</guid>
       <description>Android Studio 설정 #  프로젝트에서 SDK 사용 #  프로젝트에서 Kakao i SDK를 사용하기 위해서 다음 순서에 따라 Kakao i SDK를 빌드 의존성으로 추가한 후 불러오기를 진행합니다
 Gradle 설정 #    Android Studio | New Project로 이동하여 ****신규 프로젝트를 생성합니다
   build.gradle로 이동하여 minSdkVersion 레벨을 21, JavaVersion을 8로 설정 후, 애플리케이션의 패키지 이름을 applicationId로 지정합니다.
@@ -56,10 +57,10 @@ android { defaultConfig { ... minSdkVersion 21 //Android SDK API 레벨을 21로
     
     <item>
       <title>Web API 레퍼런스</title>
-      <link>http://example.org/kakao_work/web-api-ref/</link>
+      <link>https://keptw.saramara.ai/kakao_work/web-api-ref/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://example.org/kakao_work/web-api-ref/</guid>
+      <guid>https://keptw.saramara.ai/kakao_work/web-api-ref/</guid>
       <description>Web API 레퍼런스 #  시작하기 #   카카오워크(Kakao Work)는 HTTP Remote Procedure Call(이하 RPC) 스타일의 API를 제공합니다. HTTP RPC 스타일은 리소스 중심의 REST API와는 달리, 종류별로 그룹 지어진 기능들을 URL로 표현하여 API를 구분합니다.
 카카오워크 Web API의 URL은 다음과 같은 형식을 따릅니다.
 https://cbt-kw-api.kkep.io/v1/*{API 종류}.{API 이름}*  API 종류: 각 API는 기능 영역별로 분류되어 제공됩니다. 예를 들어 사용자 정보를 다루는 API들은 Users 분류로 묶여 제공되고, 채팅방을 다루는 API는 Conversations, 메시지를 다루는 API는 Messages 분류로 묶여 제공됩니다.</description>
@@ -67,10 +68,10 @@ https://cbt-kw-api.kkep.io/v1/*{API 종류}.{API 이름}*  API 종류: 각 API�
     
     <item>
       <title>Bot 시작 가이드</title>
-      <link>http://example.org/kakao_work/bot-stepbystep/</link>
+      <link>https://keptw.saramara.ai/kakao_work/bot-stepbystep/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://example.org/kakao_work/bot-stepbystep/</guid>
+      <guid>https://keptw.saramara.ai/kakao_work/bot-stepbystep/</guid>
       <description>Bot 시작 가이드 #  Bot 생성 및 등록 #  고객사는 카카오워크 확장플랫폼에 등록된 서비스를 바로 이용할 수 있지만, 직접 Bot 애플리케이션을 개발하고 등록하는 것도 가능합니다.
 카카오워크의 확장플랫폼에 Bot을 등록하려면 아래 테이블을 참고하여 필수 정보를 작성하고, 하나의 파일로 압축하여 카카오워크 담당자 이메일(kakaowork_platform@kakaoenterprise.com)로 발송해야 합니다. 모든 데이터가 정상적으로 등록되면 카카오워크 담당자는 영업일 기준 3일 이내, API 호출에 필요한 Access Token을 이메일로 회신합니다.
 Bot 인증 #  Bot 등록 과정에서 전달받은 인증토큰(Access Token)을 HTTP 요청(Request)의 Authorization 헤더를 통해 전달하여 어떤 Bot에서 받은 요청인지 인증 및 권한을 검사해야 합니다.</description>
@@ -78,10 +79,10 @@ Bot 인증 #  Bot 등록 과정에서 전달받은 인증토큰(Access Token)을
     
     <item>
       <title>음성 인식 개발 프로세스</title>
-      <link>http://example.org/kakao_i/sdk_for_wallpad_kor/stt_dev_process/</link>
+      <link>https://keptw.saramara.ai/kakao_i/sdk_for_wallpad_kor/stt_dev_process/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://example.org/kakao_i/sdk_for_wallpad_kor/stt_dev_process/</guid>
+      <guid>https://keptw.saramara.ai/kakao_i/sdk_for_wallpad_kor/stt_dev_process/</guid>
       <description>음성 인식 개발 프로세스 #  개발 프로세스 #  Android Studio 설정을 완료 후, 아래 순서에 따라 Kakao i SDK 연동 개발을 진행합니다. (수정1)
 사전 작업 #  음성 인식 개발 프로세스를 정상적으로 수행하기 위해서는 다음의 사전 작업이 필요합니다.
  Kakao SDK 연동 프로젝트에 Kakao SDK가 연동되어있지 않은 경우, Kakao Developers 사이트의 Kakao SDK v2 사용법에 따라 연동 작업을 진행합니다. Kakao Developers에 애플리케이션 등록 Kakao Developers에 애플리케이션을 생성하는 방법은 Kakao i PM에게 문의 부탁드립니다.</description>
@@ -89,10 +90,10 @@ Bot 인증 #  Bot 등록 과정에서 전달받은 인증토큰(Access Token)을
     
     <item>
       <title></title>
-      <link>http://example.org/kakao_i/sdk_for_wallpad_kor_v1.0.0/</link>
+      <link>https://keptw.saramara.ai/kakao_i/sdk_for_wallpad_kor_v1.0.0/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://example.org/kakao_i/sdk_for_wallpad_kor_v1.0.0/</guid>
+      <guid>https://keptw.saramara.ai/kakao_i/sdk_for_wallpad_kor_v1.0.0/</guid>
       <description>SDK for Wallpad_KOR_v.1.0 #  빨리 시작하기 #  이 문서는 Wallpad 디바이스에서 Kakao i 음성 인식 서비스를 사용하기 위하여 Kakao i SDK for Wallpad를 이용한 개발 가이드로서, 고객사의 개발자를 대상으로 작성되었습니다.
 Kakao i SDK for Wallpad는 기본적으로 사용자의 음성 명령을 입력받고, 명령어를 분석하여 사용자 요청에 맞는 응답(음성 또는 UI)을 출력하는 기능을 제공합니다.
 참고

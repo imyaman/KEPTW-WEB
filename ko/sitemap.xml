@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+  xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  
+  <url>
+    <loc>https://keptw.saramara.ai/kakao_work/</loc>
+  </url>
+  
+  <url>
+    <loc>https://keptw.saramara.ai/kakao_work/messageblock/</loc>
+  </url>
+  
+  <url>
+    <loc>https://keptw.saramara.ai/kakao_work/block-kit-1/intro/</loc>
+  </url>
+  
+  <url>
+    <loc>https://keptw.saramara.ai/kakao_work/block-kit-1/</loc>
+  </url>
+  
+  <url>
+    <loc>https://keptw.saramara.ai/kakao_i/sdk_for_wallpad_kor/startup/</loc>
+  </url>
+  
+  <url>
+    <loc>https://keptw.saramara.ai/publishing/directory_s/</loc>
+  </url>
+  
+  <url>
+    <loc>https://keptw.saramara.ai/kakao_i/sdk_for_wallpad_kor/android_studio_setting/</loc>
+  </url>
+  
+  <url>
+    <loc>https://keptw.saramara.ai/kakao_work/web-api-ref/</loc>
+  </url>
+  
+  <url>
+    <loc>https://keptw.saramara.ai/kakao_work/bot-stepbystep/</loc>
+  </url>
+  
+  <url>
+    <loc>https://keptw.saramara.ai/kakao_i/sdk_for_wallpad_kor/stt_dev_process/</loc>
+  </url>
+  
+  <url>
+    <loc>https://keptw.saramara.ai/kakao_i/sdk_for_wallpad_kor_v1.0.0/</loc>
+  </url>
+  
+  <url>
+    <loc>https://keptw.saramara.ai/categories/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://keptw.saramara.ai/en/categories/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="ko"
+                href="https://keptw.saramara.ai/categories/"
+                />
+  </url>
+  
+  <url>
+    <loc>https://keptw.saramara.ai/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://keptw.saramara.ai/en/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="ko"
+                href="https://keptw.saramara.ai/"
+                />
+  </url>
+  
+  <url>
+    <loc>https://keptw.saramara.ai/tags/kakao_i/</loc>
+  </url>
+  
+  <url>
+    <loc>https://keptw.saramara.ai/kakao_i/</loc>
+  </url>
+  
+  <url>
+    <loc>https://keptw.saramara.ai/tags/kakao_work/</loc>
+  </url>
+  
+  <url>
+    <loc>https://keptw.saramara.ai/tags/publishing/</loc>
+  </url>
+  
+  <url>
+    <loc>https://keptw.saramara.ai/publishing/</loc>
+  </url>
+  
+  <url>
+    <loc>https://keptw.saramara.ai/kakao_i/sdk_for_wallpad_kor/</loc>
+  </url>
+  
+  <url>
+    <loc>https://keptw.saramara.ai/tags/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://keptw.saramara.ai/en/tags/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="ko"
+                href="https://keptw.saramara.ai/tags/"
+                />
+  </url>
+  
+</urlset>

@@ -1,21 +1,22 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>publishing on My New Hugo Site</title>
-    <link>http://example.org/tags/publishing/</link>
-    <description>Recent content in publishing on My New Hugo Site</description>
+    <title>publishing on 노웨어</title>
+    <link>https://keptw.saramara.ai/tags/publishing/</link>
+    <description>Recent content in publishing on 노웨어</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language>
+    <language>ko-kr</language>
+    <copyright>Kakao Enterprise Corp.</copyright>
     
-	<atom:link href="http://example.org/tags/publishing/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://keptw.saramara.ai/tags/publishing/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>010101_디렉토리s 확인</title>
-      <link>http://example.org/publishing/directory_s/</link>
+      <link>https://keptw.saramara.ai/publishing/directory_s/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://example.org/publishing/directory_s/</guid>
+      <guid>https://keptw.saramara.ai/publishing/directory_s/</guid>
       <description>디렉토리s 확인 #  </description>
     </item>
     
