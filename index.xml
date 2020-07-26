@@ -112,15 +112,6 @@ https://cbt-kw-api.kkep.io/v1/*{API 종류}.{API 이름}*  API 종류: 각 API�
     
     <item>
       <title></title>
-      <link>https://keptw.saramara.ai/kakao_i/apiref/sub1/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://keptw.saramara.ai/kakao_i/apiref/sub1/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title></title>
       <link>https://keptw.saramara.ai/kakao_i/apiref/sub2/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
@@ -174,6 +165,15 @@ https://cbt-kw-api.kkep.io/v1/*{API 종류}.{API 이름}*  API 종류: 각 API�
 Kakao i SDK for Wallpad는 기본적으로 사용자의 음성 명령을 입력받고, 명령어를 분석하여 사용자 요청에 맞는 응답(음성 또는 UI)을 출력하는 기능을 제공합니다.
 참고
  이 문서는 Kakao i Android SDK Version 1.2.4.18를 기반으로 작성되었으며, Android API 21을 필요로 합니다.  Kakao i SDK 구성 요소 #  Kakao i SDK for Wallpad의 구성 요소는 다음과 같습니다.</description>
+    </item>
+    
+    <item>
+      <title>sub1</title>
+      <link>https://keptw.saramara.ai/kakao_i/apiref/sub1/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://keptw.saramara.ai/kakao_i/apiref/sub1/</guid>
+      <description></description>
     </item>
     
   </channel>

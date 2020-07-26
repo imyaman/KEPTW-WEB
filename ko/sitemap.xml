@@ -83,10 +83,6 @@
   </url>
   
   <url>
-    <loc>https://keptw.saramara.ai/kakao_i/apiref/sub1/</loc>
-  </url>
-  
-  <url>
     <loc>https://keptw.saramara.ai/kakao_i/apiref/sub2/</loc>
   </url>
   
@@ -111,6 +107,10 @@
   </url>
   
   <url>
+    <loc>https://keptw.saramara.ai/tags/apiref_/</loc>
+  </url>
+  
+  <url>
     <loc>https://keptw.saramara.ai/categories/</loc>
     <xhtml:link
                 rel="alternate"
@@ -126,6 +126,10 @@
   
   <url>
     <loc>https://keptw.saramara.ai/tags/kakao_i/</loc>
+  </url>
+  
+  <url>
+    <loc>https://keptw.saramara.ai/tags/kakao_i-sdk_/</loc>
   </url>
   
   <url>
@@ -150,6 +154,10 @@
   
   <url>
     <loc>https://keptw.saramara.ai/kakao_i/sdk_for_wallpad_kor/</loc>
+  </url>
+  
+  <url>
+    <loc>https://keptw.saramara.ai/kakao_i/apiref/sub1/</loc>
   </url>
   
   <url>
