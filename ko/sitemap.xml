@@ -7,10 +7,6 @@
   </url>
   
   <url>
-    <loc>https://keptw.saramara.ai/kakao_i_cloud/</loc>
-  </url>
-  
-  <url>
     <loc>https://keptw.saramara.ai/kakao_work/</loc>
   </url>
   
@@ -40,6 +36,10 @@
   
   <url>
     <loc>https://keptw.saramara.ai/kakao_i/sdk_for_wallpad_kor/android_studio_setting/</loc>
+  </url>
+  
+  <url>
+    <loc>https://keptw.saramara.ai/kakao_i_cloud/</loc>
   </url>
   
   <url>
