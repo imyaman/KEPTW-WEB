@@ -35,6 +35,17 @@ Bot 시작 가이드</description>
     </item>
     
     <item>
+      <title>020301_Bot 시작 가이드</title>
+      <link>https://keptw.saramara.ai/kakao_work/bot-stepbystep/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://keptw.saramara.ai/kakao_work/bot-stepbystep/</guid>
+      <description>Bot 시작 가이드 #  Bot 생성 및 등록 #  고객사는 카카오워크 확장플랫폼에 등록된 서비스를 바로 이용할 수 있지만, 직접 Bot 애플리케이션을 개발하고 등록하는 것도 가능합니다.
+카카오워크의 확장플랫폼에 Bot을 등록하려면 아래 테이블을 참고하여 필수 정보를 작성하고, 하나의 파일로 압축하여 카카오워크 담당자 이메일(kakaowork_platform@kakaoenterprise.com)로 발송해야 합니다. 모든 데이터가 정상적으로 등록되면 카카오워크 담당자는 영업일 기준 3일 이내, API 호출에 필요한 Access Token을 이메일로 회신합니다.
+Bot 인증 #  Bot 등록 과정에서 전달받은 인증토큰(Access Token)을 HTTP 요청(Request)의 Authorization 헤더를 통해 전달하여 어떤 Bot에서 받은 요청인지 인증 및 권한을 검사해야 합니다.</description>
+    </item>
+    
+    <item>
       <title>Block Kit 구성 및 정책</title>
       <link>https://keptw.saramara.ai/kakao_work/block-kit-1/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -56,17 +67,6 @@ https://lh5.googleusercontent.com/2eY2wvS6uD9Jh4J1LFmXqATpNR9w_kWDaxItz8f4EsVK3i
       <description>Web API 레퍼런스 #  시작하기 #   카카오워크(Kakao Work)는 HTTP Remote Procedure Call(이하 RPC) 스타일의 API를 제공합니다. HTTP RPC 스타일은 리소스 중심의 REST API와는 달리, 종류별로 그룹 지어진 기능들을 URL로 표현하여 API를 구분합니다.
 카카오워크 Web API의 URL은 다음과 같은 형식을 따릅니다.
 https://cbt-kw-api.kkep.io/v1/*{API 종류}.{API 이름}*  API 종류: 각 API는 기능 영역별로 분류되어 제공됩니다. 예를 들어 사용자 정보를 다루는 API들은 Users 분류로 묶여 제공되고, 채팅방을 다루는 API는 Conversations, 메시지를 다루는 API는 Messages 분류로 묶여 제공됩니다.</description>
-    </item>
-    
-    <item>
-      <title>Bot 시작 가이드</title>
-      <link>https://keptw.saramara.ai/kakao_work/bot-stepbystep/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://keptw.saramara.ai/kakao_work/bot-stepbystep/</guid>
-      <description>Bot 시작 가이드 #  Bot 생성 및 등록 #  고객사는 카카오워크 확장플랫폼에 등록된 서비스를 바로 이용할 수 있지만, 직접 Bot 애플리케이션을 개발하고 등록하는 것도 가능합니다.
-카카오워크의 확장플랫폼에 Bot을 등록하려면 아래 테이블을 참고하여 필수 정보를 작성하고, 하나의 파일로 압축하여 카카오워크 담당자 이메일(kakaowork_platform@kakaoenterprise.com)로 발송해야 합니다. 모든 데이터가 정상적으로 등록되면 카카오워크 담당자는 영업일 기준 3일 이내, API 호출에 필요한 Access Token을 이메일로 회신합니다.
-Bot 인증 #  Bot 등록 과정에서 전달받은 인증토큰(Access Token)을 HTTP 요청(Request)의 Authorization 헤더를 통해 전달하여 어떤 Bot에서 받은 요청인지 인증 및 권한을 검사해야 합니다.</description>
     </item>
     
   </channel>
