@@ -1,15 +1,25 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Technical documents - Kakao Enterprise on Knowhere</title>
+    <title>Knowhere</title>
     <link>https://keptw.saramara.ai/en/</link>
-    <description>Recent content in Technical documents - Kakao Enterprise on Knowhere</description>
+    <description>Recent content on Knowhere</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ko-kr</language>
     <copyright>Kakao Enterprise Corp.</copyright>
     
 	<atom:link href="https://keptw.saramara.ai/en/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Technical documents - Kakao Enterprise</title>
+      <link>https://keptw.saramara.ai/en/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://keptw.saramara.ai/en/</guid>
+      <description>{Knowhere} is the home of Kakao Enterprise technical documents for developers and IT professionals. Check out our tutorials, API reference, and code examples.
+List of prodcts</description>
+    </item>
     
   </channel>
 </rss>

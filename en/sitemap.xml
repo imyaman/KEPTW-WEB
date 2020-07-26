@@ -17,6 +17,20 @@
   </url>
   
   <url>
+    <loc>https://keptw.saramara.ai/en/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="ko"
+                href="https://keptw.saramara.ai/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://keptw.saramara.ai/en/"
+                />
+  </url>
+  
+  <url>
     <loc>https://keptw.saramara.ai/en/tags/</loc>
     <xhtml:link
                 rel="alternate"
