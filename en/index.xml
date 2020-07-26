@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Knowhere</title>
+    <title>Technical documents - Kakao Enterprise on Knowhere</title>
     <link>https://keptw.saramara.ai/en/</link>
-    <description>Recent content on Knowhere</description>
+    <description>Recent content in Technical documents - Kakao Enterprise on Knowhere</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ko-kr</language>
     <copyright>Kakao Enterprise Corp.</copyright>
