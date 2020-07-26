@@ -12,11 +12,20 @@
     
     
     <item>
-      <title>apiref_</title>
-      <link>https://keptw.saramara.ai/tags/apiref_/</link>
+      <title>API 레퍼런스</title>
+      <link>https://keptw.saramara.ai/tags/api-%EB%A0%88%ED%8D%BC%EB%9F%B0%EC%8A%A4/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://keptw.saramara.ai/tags/apiref_/</guid>
+      <guid>https://keptw.saramara.ai/tags/api-%EB%A0%88%ED%8D%BC%EB%9F%B0%EC%8A%A4/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>HTTP</title>
+      <link>https://keptw.saramara.ai/tags/http/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://keptw.saramara.ai/tags/http/</guid>
       <description></description>
     </item>
     
@@ -89,6 +98,15 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://keptw.saramara.ai/tags/%EA%B8%B0%ED%83%80/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>초급</title>
+      <link>https://keptw.saramara.ai/tags/%EC%B4%88%EA%B8%89/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://keptw.saramara.ai/tags/%EC%B4%88%EA%B8%89/</guid>
       <description></description>
     </item>
     

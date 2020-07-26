@@ -107,7 +107,7 @@
   </url>
   
   <url>
-    <loc>https://keptw.saramara.ai/tags/apiref_/</loc>
+    <loc>https://keptw.saramara.ai/tags/api-%EB%A0%88%ED%8D%BC%EB%9F%B0%EC%8A%A4/</loc>
   </url>
   
   <url>
@@ -122,6 +122,14 @@
                 hreflang="ko"
                 href="https://keptw.saramara.ai/categories/"
                 />
+  </url>
+  
+  <url>
+    <loc>https://keptw.saramara.ai/tags/http/</loc>
+  </url>
+  
+  <url>
+    <loc>https://keptw.saramara.ai/categories/kakao-i/</loc>
   </url>
   
   <url>
@@ -190,6 +198,10 @@
   
   <url>
     <loc>https://keptw.saramara.ai/tags/%EA%B8%B0%ED%83%80/</loc>
+  </url>
+  
+  <url>
+    <loc>https://keptw.saramara.ai/tags/%EC%B4%88%EA%B8%89/</loc>
   </url>
   
 </urlset>
