@@ -12,12 +12,12 @@
     
     
     <item>
-      <title>sub1</title>
+      <title>태그가 있는 문서</title>
       <link>https://keptw.saramara.ai/kakao_i/apiref/sub1/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://keptw.saramara.ai/kakao_i/apiref/sub1/</guid>
-      <description></description>
+      <description>이 문서의 태그에 &amp;ldquo;API 레퍼런스&amp;quot;가 포함돼 있습니다.</description>
     </item>
     
   </channel>

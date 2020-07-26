@@ -165,10 +165,6 @@
   </url>
   
   <url>
-    <loc>https://keptw.saramara.ai/kakao_i/apiref/sub1/</loc>
-  </url>
-  
-  <url>
     <loc>https://keptw.saramara.ai/tags/</loc>
     <xhtml:link
                 rel="alternate"
@@ -206,6 +202,10 @@
   
   <url>
     <loc>https://keptw.saramara.ai/publishing/kitchensink/</loc>
+  </url>
+  
+  <url>
+    <loc>https://keptw.saramara.ai/kakao_i/apiref/sub1/</loc>
   </url>
   
 </urlset>
